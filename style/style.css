@@ -448,6 +448,135 @@ legend {
   height: 80px;
 }
 
+.news {
+  background: #7b797a;
+  height: 470px;
+}
+.news .news__wrapper {
+  margin-left: 300px;
+  margin-right: 300px;
+}
+.news .news__wrapper .news__text {
+  color: #E6E6E6;
+  text-align: center;
+  font-family: Shantell Sans;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 7.56px;
+  margin-bottom: 23px;
+  padding-top: 20px;
+}
+.news .news__wrapper .line__container__news {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+}
+.news .news__wrapper .line__container__news .first__line__news {
+  width: 24px;
+  height: 8px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: #E6E6E6;
+}
+.news .news__wrapper .line__container__news .second__line__news {
+  width: 232px;
+  height: 8px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: #E6E6E6;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+.news .news__wrapper .line__container__news .third__line__news {
+  width: 24px;
+  height: 8px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: #E6E6E6;
+}
+.news .news__wrapper .news__images {
+  margin-top: 38px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.news .news__wrapper .news__images img {
+  width: 300px;
+  border: none;
+  border-radius: 20%;
+  height: 100%;
+}
+.news .news__wrapper .more__info__news {
+  color: #E6E6E6;
+  text-align: center;
+  font-family: Shantell Sans;
+  font-size: 26px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 4.68px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.news .news__wrapper .arrows__container__news {
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 100px;
+       column-gap: 100px;
+}
+.footer {
+  background: #262626;
+  height: 125px;
+  width: 100%;
+}
+.footer .footer__wrapper {
+  margin-left: 300px;
+  margin-right: 300px;
+}
+.footer .footer__wrapper .footer__container {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footer__wrapper .footer__container .footer__left__text .footer__service__name {
+  color: #FFF;
+  font-family: Shantell Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2.88px;
+}
+.footer .footer__wrapper .footer__container .footer__left__text .footer__address {
+  color: #FFF;
+  font-family: Shantell Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2.88px;
+}
+.footer .footer__wrapper .footer__container .footer__r__text .footer__contacts .footer__contacts__text {
+  color: #FFF;
+  font-family: Shantell Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2.88px;
+}
+.footer .footer__wrapper .footer__container .footer__r__text .footer__contacts .footer__number__phone {
+  color: #FFF;
+  font-family: Shantell Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2.88px;
+}
+
 /* Extra small devices (phones, 600px and down) */
 /* Small devices (portrait tablets and large phones, 600px and up) */
 /* Medium devices (landscape tablets, 768px and up) */
