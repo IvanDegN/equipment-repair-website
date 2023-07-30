@@ -105,8 +105,28 @@ legend {
 	    -webkit-justify-content: space-between;
 	    -ms-flex-pack: space-between;
        justify-content: space-between;
-       width: 500px;
        margin-left: 25px;
+       .name{
+        color: #E6E6E6;
+        font-family: Shantell Sans;
+        font-size: 42px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 7.56px;
+        margin-top: 10px;
+       }
+       .slogan{
+        color: #E6E6E6;
+        text-align: center;
+        font-family: Shantell Sans;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 3.6px;
+        margin-top: 24px;
+       }
     }
     
 }
@@ -119,7 +139,7 @@ legend {
         margin-left: 92px;
     }
 }
-.title{
+.slogan{
     color: #E6E6E6;
     font-family: Shantell Sans;
     font-size: 42px;
@@ -156,8 +176,8 @@ legend {
 }
 .about{
     background: #262626;
-    background-image: url('/images/hdmi.svg');
-    height: 335px;
+    background-image: url('/images/bcg.svg');
+    height: 1000px;
     .about__title{
         color: #E6E6E6;
         text-align: center;
@@ -179,12 +199,123 @@ legend {
         font-weight: 400;
         line-height: normal;
         letter-spacing: 4.32px;
-        text-align: center;
     }
+
+    
+
     .about__container{
-        position: relative;
-        margin-top: -145px;
+       
+        margin-left: 400px;
+        margin-right: 400px;
+        margin-top: -110px;
+
+        .about__line{
+            border-radius: 4px;
+            background: #E6E6E6;
+            width: 1095px;
+            height: 8px;
+            flex-shrink: 0;
+            margin-top: 67px;
+            margin-bottom: 30px;
+        }
+
+        .schedule__title{
+            color: #E6E6E6;
+            font-family: Shantell Sans;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 0%; /* 0px */
+            letter-spacing: 4.32px;
+            margin-top: 208px;
+    
+        }
+
+        .schedule__container{
+            display: flex;
+            height: 300px;
+            justify-content: space-between;
+            margin-top: 40px;
+
+           
+
+           
+            .schedule__time{
+                display: flex;
+                height: 300px;
+                justify-content: space-between;
+                gap: 5%;
+
+                .schedule__left{
+                    width: 200px;
+                    .weekday, .saturday, .sunday{
+                        color: #E6E6E6;
+                        font-family: Shantell Sans;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 0%;
+                        letter-spacing: 4.32px;
+                        height: 40px;
+                        
+                    }
+                }
+
+            }
+            .schedule__r{
+                width: 200px;
+                .time__first, .time__second, .weekend{
+                    color: #E6E6E6;
+                    font-family: Shantell Sans;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 0%;
+                    letter-spacing: 4.32px;
+                    height: 40px;
+                }   
+            }
+            .map__container{
+                position: relative;
+                margin-top: -180px;
+                .map{
+                    width: 600px;
+                    height: 382px;
+                    flex-shrink: 0;
+                    border-radius: 36px;
+                    border: 1px solid #E6E6E6;
+                    
+                    // background: url('/images/map.svg'), lightgray 50% / cover no-repeat;
+                }
+
+                .map__addres{
+                    color: #E6E6E6;
+                    font-family: Shantell Sans;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    letter-spacing: 3.24px;
+                    text-align: center;
+                    margin-top: 20px;
+                }
+                .map__addres::before{
+                    content: ' ';
+                    background-image: url('/images/addres.svg');
+                    width: 23.646px;
+                    height: 33.78px;
+                    flex-shrink: 0;
+                    position:absolute;
+                    left: 35px;
+                    top: 390px;
+                }
+            }
+        }
+        
     }
+
+   
+
     .more__info{
         color: #E6E6E6;
         text-align: center;
@@ -194,8 +325,8 @@ legend {
         font-weight: 600;
         line-height: normal;
         letter-spacing: 4.68px;
-        margin-top: 107px;
-        margin-bottom: 20px;
+        
+        
        
 
         

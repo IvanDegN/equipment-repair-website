@@ -94,8 +94,28 @@ legend {
 .header .text__wrapper {
   display: flex;
   justify-content: space-between;
-  width: 500px;
   margin-left: 25px;
+}
+.header .text__wrapper .name {
+  color: #E6E6E6;
+  font-family: Shantell Sans;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 7.56px;
+  margin-top: 10px;
+}
+.header .text__wrapper .slogan {
+  color: #E6E6E6;
+  text-align: center;
+  font-family: Shantell Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 3.6px;
+  margin-top: 24px;
 }
 
 .logo__bcg .logo {
@@ -106,7 +126,7 @@ legend {
   margin-left: 92px;
 }
 
-.title {
+.slogan {
   color: #E6E6E6;
   font-family: Shantell Sans;
   font-size: 42px;
@@ -143,8 +163,8 @@ legend {
 
 .about {
   background: #262626;
-  background-image: url("/images/hdmi.svg");
-  height: 335px;
+  background-image: url("/images/bcg.svg");
+  height: 1000px;
 }
 .about .about__title {
   color: #E6E6E6;
@@ -166,11 +186,100 @@ legend {
   font-weight: 400;
   line-height: normal;
   letter-spacing: 4.32px;
-  text-align: center;
 }
 .about .about__container {
+  margin-left: 400px;
+  margin-right: 400px;
+  margin-top: -110px;
+}
+.about .about__container .about__line {
+  border-radius: 4px;
+  background: #E6E6E6;
+  width: 1095px;
+  height: 8px;
+  flex-shrink: 0;
+  margin-top: 67px;
+  margin-bottom: 30px;
+}
+.about .about__container .schedule__title {
+  color: #E6E6E6;
+  font-family: Shantell Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 0%; /* 0px */
+  letter-spacing: 4.32px;
+  margin-top: 208px;
+}
+.about .about__container .schedule__container {
+  display: flex;
+  height: 300px;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.about .about__container .schedule__container .schedule__time {
+  display: flex;
+  height: 300px;
+  justify-content: space-between;
+  gap: 5%;
+}
+.about .about__container .schedule__container .schedule__time .schedule__left {
+  width: 200px;
+}
+.about .about__container .schedule__container .schedule__time .schedule__left .weekday, .about .about__container .schedule__container .schedule__time .schedule__left .saturday, .about .about__container .schedule__container .schedule__time .schedule__left .sunday {
+  color: #E6E6E6;
+  font-family: Shantell Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 0%;
+  letter-spacing: 4.32px;
+  height: 40px;
+}
+.about .about__container .schedule__container .schedule__r {
+  width: 200px;
+}
+.about .about__container .schedule__container .schedule__r .time__first, .about .about__container .schedule__container .schedule__r .time__second, .about .about__container .schedule__container .schedule__r .weekend {
+  color: #E6E6E6;
+  font-family: Shantell Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 0%;
+  letter-spacing: 4.32px;
+  height: 40px;
+}
+.about .about__container .schedule__container .map__container {
   position: relative;
-  margin-top: -145px;
+  margin-top: -180px;
+}
+.about .about__container .schedule__container .map__container .map {
+  width: 600px;
+  height: 382px;
+  flex-shrink: 0;
+  border-radius: 36px;
+  border: 1px solid #E6E6E6;
+}
+.about .about__container .schedule__container .map__container .map__addres {
+  color: #E6E6E6;
+  font-family: Shantell Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 3.24px;
+  text-align: center;
+  margin-top: 20px;
+}
+.about .about__container .schedule__container .map__container .map__addres::before {
+  content: " ";
+  background-image: url("/images/addres.svg");
+  width: 23.646px;
+  height: 33.78px;
+  flex-shrink: 0;
+  position: absolute;
+  left: 35px;
+  top: 390px;
 }
 .about .more__info {
   color: #E6E6E6;
@@ -181,8 +290,6 @@ legend {
   font-weight: 600;
   line-height: normal;
   letter-spacing: 4.68px;
-  margin-top: 107px;
-  margin-bottom: 20px;
 }
 .about .arrows__container {
   display: flex;
