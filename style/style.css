@@ -148,17 +148,38 @@ legend {
   margin-top: 25px;
 }
 
-.phone {
+.phone__wrapper {
+  background: #E6E6E6;
+  display: flex;
+  justify-content: space-between;
+}
+.phone__wrapper .phone {
   height: 335px;
   width: 100%;
-  background: #E6E6E6;
+  z-index: 1;
 }
-.phone .phone__image {
-  width: 96.5%;
-  height: 257px;
-  margin-left: 64px;
-  margin-top: 40px;
-  margin-bottom: 38px;
+.phone__wrapper .phone__wrapper__text {
+  margin-right: 100px;
+}
+.phone__wrapper .phone__wrapper__text .phone__main__text {
+  color: #262626;
+  text-align: center;
+  font-family: Shantell Sans;
+  font-size: 228px;
+  font-style: italic;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 3.42px;
+}
+.phone__wrapper .phone__wrapper__text .phone__sub__text {
+  color: #262626;
+  text-align: center;
+  font-family: Shantell Sans;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 5.4px;
 }
 
 .about {
@@ -348,13 +369,12 @@ legend {
 }
 
 .repair {
-  height: 345px;
-  background-color: #1380ff;
-  background-image: url("/images/04.svg");
+  height: 1080px;
+  background: url("/images/BG.svg");
 }
 .repair .repair__wrapper {
-  margin-left: 300px;
-  margin-right: 300px;
+  margin-left: 500px;
+  margin-right: 500px;
 }
 .repair .repair__wrapper .repair__title {
   color: #E6E6E6;
@@ -423,6 +443,22 @@ legend {
   -moz-column-gap: 100px;
        column-gap: 100px;
   margin-bottom: 20px;
+}
+.repair .repair__wrapper .repair__kind__text {
+  color: #E6E6E6;
+  text-align: center;
+  font-family: Shantell Sans;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 7.56px;
+}
+.repair .repair__wrapper .repair__kind__wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  flex-wrap: wrap;
 }
 .our__works {
   background: #262626;

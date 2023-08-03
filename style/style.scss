@@ -160,20 +160,54 @@ legend {
     letter-spacing: 3.6px;
     margin-top: 25px;
 }
-.phone{
-    height: 335px;
-    width: 100%;
+
+.phone__wrapper{
     background: #E6E6E6;
-    
-    .phone__image{
-        width: 96.5%;
-        height: 257px;
-        margin-left: 64px;
-        margin-top: 40px;
-        margin-bottom: 38px;
+
+    display: flex;
+    justify-content: space-between;
+    .phone{
+        height: 335px;
+        width: 100%;
         
-    }   
+        
+        z-index: 1;
+        .phone__image{
+            
+            // height: 335px;
+            
+            
+        }   
+    }
+    .phone__wrapper__text{
+        margin-right: 100px;
+        
+
+        .phone__main__text{
+            color: #262626;
+            text-align: center;
+            font-family: Shantell Sans;
+            font-size: 228px;
+            font-style: italic;
+            font-weight: 800;
+            line-height: normal;
+            letter-spacing: 3.42px;
+        }
+
+        .phone__sub__text{
+            color: #262626;
+            text-align: center;
+            font-family: Shantell Sans;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 5.4px;
+        }
+    }
 }
+
+
 .about{
     background: #262626;
     background-image: url('/images/bcg.svg');
@@ -434,9 +468,12 @@ legend {
 }
 
 .repair{
+    
     .repair__wrapper{
-        margin-left: 300px;
-        margin-right: 300px;
+        // margin-left: 300px;
+        // margin-right: 300px;
+        margin-left: 500px;
+        margin-right: 500px;
         .repair__title{
             color: #E6E6E6;
         text-align: center;
@@ -535,10 +572,48 @@ legend {
                 }
             }
         }
+
+        .repair__kind__text{
+            color: #E6E6E6;
+            text-align: center;
+            font-family: Shantell Sans;
+            font-size: 42px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 7.56px;
+        }
+
+        .repair__kind__wrapper{
+            // margin-right: 500px;
+            // margin-left: 500px;
+            
+            display: flex;
+            justify-content: space-between;
+            gap: 50px;
+            flex-wrap: wrap;
+
+            
+
+            .reair__kind__item{
+
+                .repair__kind__img{
+
+                }
+
+                .repair__kind__text{
+
+                }
+
+                .repair__kind__price{
+
+                }
+            }
+        }
     }
-    height: 345px;
-    background-color: #1380ff;
-    background-image: url('/images/04.svg');
+    
+    height: 1080px;
+    background: url('/images/BG.svg');
 }
 
 .our__works{
@@ -744,6 +819,9 @@ legend {
     }
 
 }
+
+
+
 
 .news{
     background: #7b797a;
