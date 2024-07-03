@@ -84,6 +84,10 @@ legend {
   display: block;
 }
 
+body {
+  font-family: "Shantell Sans";
+}
+
 .header {
   background: #262626;
   height: 75px;
@@ -152,6 +156,7 @@ legend {
   background: #E6E6E6;
   display: flex;
   justify-content: space-between;
+  height: 445px;
 }
 .phone__wrapper .phone {
   height: 335px;
@@ -180,12 +185,13 @@ legend {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 5.4px;
+  margin-top: -50px;
 }
 
 .about {
   background: #262626;
-  background-image: url("/images/bcg.svg");
-  height: 1000px;
+  background-image: url("/images/bg_about.svg");
+  height: 1080px;
 }
 .about .about__title {
   color: #E6E6E6;
@@ -208,6 +214,15 @@ legend {
   line-height: normal;
   letter-spacing: 4.32px;
 }
+.about .about__text .text__yellow {
+  color: #F6A91A;
+}
+.about .about__text .text__red {
+  color: #FF5656;
+}
+.about .about__text .bold__text {
+  font-weight: 600;
+}
 .about .about__container {
   margin-left: 400px;
   margin-right: 400px;
@@ -219,8 +234,8 @@ legend {
   width: 1095px;
   height: 8px;
   flex-shrink: 0;
-  margin-top: 67px;
-  margin-bottom: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 .about .about__container .schedule__title {
   color: #E6E6E6;
@@ -230,24 +245,34 @@ legend {
   font-weight: 400;
   line-height: 0%; /* 0px */
   letter-spacing: 4.32px;
-  margin-top: 208px;
 }
-.about .about__container .schedule__container {
+.about .about__container .container .flex__container__left .schedule__container {
   display: flex;
-  height: 300px;
   justify-content: space-between;
   margin-top: 40px;
+  margin-bottom: 30px;
 }
-.about .about__container .schedule__container .schedule__time {
+.about .about__container .container .flex__container__left .schedule__container .schedule__time {
   display: flex;
-  height: 300px;
   justify-content: space-between;
   gap: 5%;
 }
-.about .about__container .schedule__container .schedule__time .schedule__left {
-  width: 200px;
+.about .about__container .container .flex__container__left .schedule__container .schedule__time .schedule__time__text {
+  color: #E6E6E6;
+  font-family: Shantell Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 0%;
+  letter-spacing: 4.32px;
 }
-.about .about__container .schedule__container .schedule__time .schedule__left .weekday, .about .about__container .schedule__container .schedule__time .schedule__left .saturday, .about .about__container .schedule__container .schedule__time .schedule__left .sunday {
+.about .about__container .container .flex__container__left .schedule__container .schedule__time .schedule__time__text .text__yellow {
+  color: #F6A91A;
+}
+.about .about__container .container .flex__container__left .schedule__container .schedule__time .schedule__left {
+  width: 220px;
+}
+.about .about__container .container .flex__container__left .schedule__container .schedule__time .schedule__left .weekday, .about .about__container .container .flex__container__left .schedule__container .schedule__time .schedule__left .saturday, .about .about__container .container .flex__container__left .schedule__container .schedule__time .schedule__left .sunday {
   color: #E6E6E6;
   font-family: Shantell Sans;
   font-size: 24px;
@@ -257,10 +282,10 @@ legend {
   letter-spacing: 4.32px;
   height: 40px;
 }
-.about .about__container .schedule__container .schedule__r {
-  width: 200px;
+.about .about__container .container .flex__container__left .schedule__container .schedule__r {
+  width: 220px;
 }
-.about .about__container .schedule__container .schedule__r .time__first, .about .about__container .schedule__container .schedule__r .time__second, .about .about__container .schedule__container .schedule__r .weekend {
+.about .about__container .container .flex__container__left .schedule__container .schedule__r .time__first, .about .about__container .container .flex__container__left .schedule__container .schedule__r .time__second, .about .about__container .container .flex__container__left .schedule__container .schedule__r .weekend {
   color: #E6E6E6;
   font-family: Shantell Sans;
   font-size: 24px;
@@ -270,18 +295,63 @@ legend {
   letter-spacing: 4.32px;
   height: 40px;
 }
-.about .about__container .schedule__container .map__container {
+.about .about__container .container .flex__container__left .phone__container {
   position: relative;
-  margin-top: -180px;
+  color: #E6E6E6;
+  font-family: Shantell Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 4.32px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  width: 690px;
 }
-.about .about__container .schedule__container .map__container .map {
-  width: 600px;
-  height: 382px;
+.about .about__container .container .flex__container__left .phone__container .phone__text::after {
+  content: " ";
+  background-image: url("/images/phone_icon.svg");
+  width: 36px;
+  height: 35.358px;
   flex-shrink: 0;
-  border-radius: 36px;
-  border: 1px solid #E6E6E6;
+  position: absolute;
+  left: -45px;
+  top: 0px;
 }
-.about .about__container .schedule__container .map__container .map__addres {
+.about .about__container .container .flex__container__left .phone__container .number__phone .text__yellow {
+  color: #F6A91A;
+}
+.about .about__container .container .flex__container__left .adress__containter {
+  position: relative;
+  color: #E6E6E6;
+  font-family: Shantell Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 4.32px;
+}
+.about .about__container .container .flex__container__left .adress__containter .adress__text::after {
+  content: " ";
+  background-image: url("/images/addres.svg");
+  width: 23.646px;
+  height: 33.78px;
+  flex-shrink: 0;
+  position: absolute;
+  left: -45px;
+  top: 0px;
+}
+.about .about__container .container .flex__container__r {
+  display: inline-block;
+  margin-top: 170px;
+  margin-right: 40px;
+}
+.about .about__container .container .flex__container__r .map__container {
+  width: 611px;
+  height: 387px;
+  flex-shrink: 0;
+}
+.about .about__container .container .flex__container__r .map__container .map__addres {
   color: #E6E6E6;
   font-family: Shantell Sans;
   font-size: 18px;
@@ -291,8 +361,9 @@ legend {
   letter-spacing: 3.24px;
   text-align: center;
   margin-top: 20px;
+  display: none;
 }
-.about .about__container .schedule__container .map__container .map__addres::before {
+.about .about__container .container .flex__container__r .map__container .map__addres::before {
   content: " ";
   background-image: url("/images/addres.svg");
   width: 23.646px;
@@ -301,6 +372,7 @@ legend {
   position: absolute;
   left: 35px;
   top: 390px;
+  display: none;
 }
 .about .more__info {
   color: #E6E6E6;
@@ -370,7 +442,7 @@ legend {
 
 .repair {
   height: 1080px;
-  background: url("/images/BG.svg");
+  background: url("/images/bg_repair.svg");
 }
 .repair .repair__wrapper {
   margin-left: 500px;
@@ -424,7 +496,7 @@ legend {
   line-height: normal;
   letter-spacing: 4.32px;
   margin-top: 20px;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
 }
 .repair .repair__wrapper .more__info__repair {
   color: #E6E6E6;
@@ -459,11 +531,36 @@ legend {
   justify-content: space-between;
   gap: 50px;
   flex-wrap: wrap;
+  margin-top: 180px;
+  align-items: center;
 }
+.repair .repair__wrapper .repair__kind__wrapper .reair__kind__item .repair__kind__text {
+  color: #E6E6E6;
+  text-align: center;
+  font-family: Shantell Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.88px;
+  text-align: center;
+}
+.repair .repair__wrapper .repair__kind__wrapper .reair__kind__item .repair__kind__price {
+  color: #F6A91A;
+  font-family: Shantell Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2.88px;
+  text-align: center;
+}
+
 .our__works {
   background: #262626;
   background-image: url("/images/HDMI_1.svg");
   height: 470px;
+  display: none;
 }
 .our__works .circles__our__works {
   display: flex;
@@ -594,6 +691,7 @@ legend {
 .news {
   background: #7b797a;
   height: 470px;
+  display: none;
 }
 .news .news__wrapper {
   margin-left: 300px;
@@ -683,6 +781,43 @@ legend {
   display: flex;
   justify-content: space-between;
 }
+.footer .footer__wrapper .footer__container .kv__logo {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  height: 59px;
+  width: 59px;
+}
+.footer .footer__wrapper .footer__container .copy {
+  color: #E6E6E6;
+  font-family: Shantell Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 2.88px;
+  position: relative;
+}
+.footer .footer__wrapper .footer__container .copy .blue {
+  color: #1380FF;
+  position: absolute;
+  left: -27px;
+}
+.footer .footer__wrapper .footer__container .dezign {
+  color: #7B7A7A;
+  font-family: Shantell Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2.88px;
+  margin-top: 30px;
+}
+.footer .footer__wrapper .footer__container .footer__left__text {
+  position: relative;
+}
 .footer .footer__wrapper .footer__container .footer__left__text .footer__service__name {
   color: #FFF;
   font-family: Shantell Sans;
@@ -693,13 +828,27 @@ legend {
   letter-spacing: 2.88px;
 }
 .footer .footer__wrapper .footer__container .footer__left__text .footer__address {
-  color: #FFF;
+  color: #E6E6E6;
   font-family: Shantell Sans;
   font-size: 16px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   line-height: normal;
   letter-spacing: 2.88px;
+  margin-bottom: 30px;
+}
+.footer .footer__wrapper .footer__container .footer__left__text .footer__address::after {
+  content: " ";
+  background-image: url("/images/addres_b.svg");
+  width: 21px;
+  height: 30px;
+  flex-shrink: 0;
+  position: absolute;
+  left: -30px;
+  top: -10px;
+}
+.footer .footer__wrapper .footer__container .footer__r__text .footer__contacts {
+  position: relative;
 }
 .footer .footer__wrapper .footer__container .footer__r__text .footer__contacts .footer__contacts__text {
   color: #FFF;
@@ -711,17 +860,253 @@ legend {
   letter-spacing: 2.88px;
 }
 .footer .footer__wrapper .footer__container .footer__r__text .footer__contacts .footer__number__phone {
-  color: #FFF;
+  color: #E6E6E6;
   font-family: Shantell Sans;
   font-size: 16px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   line-height: normal;
   letter-spacing: 2.88px;
 }
+.footer .footer__wrapper .footer__container .footer__r__text .footer__contacts .footer__number__phone::after {
+  content: " ";
+  background-image: url("/images/phone_icon.svg");
+  width: 36px;
+  height: 35px;
+  flex-shrink: 0;
+  position: absolute;
+  left: -50px;
+  top: -10px;
+}
 
-/* Extra small devices (phones, 600px and down) */
-/* Small devices (portrait tablets and large phones, 600px and up) */
-/* Medium devices (landscape tablets, 768px and up) */
-/* Large devices (laptops/desktops, 992px and up) */
-/* Extra large devices (large laptops and desktops, 1200px and up) */
+.pop_up {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: rgba(38, 38, 38, 0.85);
+  z-index: 2;
+}
+.pop_up .pop_button {
+  z-index: 2;
+}
+
+.pop_up_container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.pop_up_container .pop_button {
+  margin: auto;
+  border-radius: 68px;
+  border: 3px solid #E6E6E6;
+  background: #1380FF;
+  width: 661.26px;
+  height: 86px;
+  flex-shrink: 0;
+  display: flex;
+}
+.pop_up_container .pop_button .pop_button_text {
+  color: #E6E6E6;
+  text-align: center;
+  margin: auto;
+  font-family: Shantell Sans;
+  font-size: 47px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 8.46px;
+  align-self: center;
+}
+
+.pop_up_body {
+  margin: auto;
+  height: 731px;
+  width: 1176px;
+  border-radius: 68px;
+  border: 3px solid #1380FF;
+  background: url(/images/bg_pop.svg);
+  background-color: #262626;
+}
+.pop_up_body .pop_title {
+  color: #E6E6E6;
+  text-align: center;
+  font-family: Shantell Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 5.76px;
+  margin-top: 20px;
+}
+.pop_up_body .pop_content {
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-bottom: 20px;
+}
+.pop_up_body .pop_content .pop_item_text {
+  color: #7B7A7A;
+  font-family: Shantell Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 4.32px;
+  margin-bottom: 10px;
+}
+.pop_up_body .pop_content .pop__item {
+  position: relative;
+}
+.pop_up_body .pop_content .pop_item_input {
+  width: 648px;
+  height: 42px;
+  flex-shrink: 0;
+  border-radius: 21px;
+  background: #E6E6E6;
+  margin-bottom: 20px;
+}
+.pop_up_body .pop_content .placeholder {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  color: #262626;
+  font-family: Shantell Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 3.6px;
+}
+.pop_up_body .pop_content .pop__item:hover .placeholder {
+  display: none;
+}
+.pop_up_body .pop_content .pop__item input::-moz-placeholder {
+  opacity: 0.5;
+}
+.pop_up_body .pop_content .pop__item input::placeholder {
+  opacity: 0.5;
+}
+.pop_up_body .pop_content .pop_item_input.last {
+  height: 138px;
+}
+.pop_up_body .pop_content .pop_down_text {
+  color: #7B7A7A;
+  text-align: center;
+  font-family: Shantell Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 4.32px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .wrapper .phone__wrapper {
+    height: 315px;
+  }
+  .wrapper .footer {
+    background-size: contain;
+  }
+  .wrapper .footer .footer__wrapper {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .wrapper .footer .footer__wrapper .footer__container .footer__left__text .footer__address {
+    margin-bottom: 11px;
+  }
+  .wrapper .repair {
+    background-repeat: no-repeat;
+  }
+  .wrapper .repair .repair__wrapper {
+    margin-left: 18rem;
+    margin-right: 5rem;
+  }
+  .wrapper .phone__wrapper {
+    display: block;
+    background-size: contain;
+  }
+  .wrapper .phone__wrapper .phone {
+    display: none;
+  }
+  .wrapper .phone__wrapper .phone .phone__image {
+    display: none;
+  }
+  .wrapper .about {
+    height: 680px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .wrapper .about .about__container {
+    margin-left: 440px;
+    margin-right: 220px;
+  }
+  .wrapper .about .about__container .container {
+    font-size: 20px;
+  }
+  .wrapper .about .about__container .about__text {
+    font-size: 16px;
+  }
+  .wrapper .about .about__container .container .flex__container__r .map__container .map {
+    display: none;
+  }
+  .wrapper .about .about__container .about__line {
+    width: 500px;
+  }
+  .about .about__container .schedule__title {
+    font-size: 16px;
+  }
+  .about .about__container .container .flex__container__left .phone__container {
+    font-size: 16px;
+  }
+  .about .about__container .container .flex__container__left .schedule__container .schedule__time .schedule__time__text {
+    font-size: 16px;
+  }
+  .phone__wrapper .phone__wrapper__text .phone__main__text {
+    font-size: 148px;
+  }
+  .about .about__container .container .flex__container__left .adress__containter .adress__text {
+    font-size: 16px;
+  }
+  /* 
+    ##Device = Desktops
+    ##Screen = 1281px to higher resolution desktops
+  */
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+}
+@media only screen and (max-width: 1200px) and (min-width: 1025px) and (max-width: 1280px) {
+  /* CSS */
+}
+@media only screen and (max-width: 1200px) and (min-width: 768px) and (max-width: 1024px) {
+  /* CSS */
+}
+@media only screen and (max-width: 1200px) and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /* CSS */
+}
+@media only screen and (max-width: 1200px) and (min-width: 481px) and (max-width: 767px) {
+  /* CSS */
+}
+@media only screen and (max-width: 1200px) and (min-width: 320px) and (max-width: 480px) {
+  /* CSS */
+}

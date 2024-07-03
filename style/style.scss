@@ -87,6 +87,10 @@ legend {
 	display: block;
 }
 
+body{
+    font-family: 'Shantell Sans';
+}
+
 .header{
     background: #262626;
     height: 75px;
@@ -166,6 +170,7 @@ legend {
 
     display: flex;
     justify-content: space-between;
+    height: 445px;
     .phone{
         height: 335px;
         width: 100%;
@@ -203,6 +208,7 @@ legend {
             font-weight: 700;
             line-height: normal;
             letter-spacing: 5.4px;
+            margin-top: -50px;
         }
     }
 }
@@ -210,8 +216,8 @@ legend {
 
 .about{
     background: #262626;
-    background-image: url('/images/bcg.svg');
-    height: 1000px;
+    background-image: url('/images/bg_about.svg');
+    height: 1080px;
     .about__title{
         color: #E6E6E6;
         text-align: center;
@@ -233,6 +239,18 @@ legend {
         font-weight: 400;
         line-height: normal;
         letter-spacing: 4.32px;
+
+        .text__yellow{
+            color: #F6A91A;
+        }
+
+        .text__red{
+            color: #FF5656;
+        }
+
+        .bold__text{
+            font-weight: 600;
+        }
     }
 
     
@@ -249,8 +267,8 @@ legend {
             width: 1095px;
             height: 8px;
             flex-shrink: 0;
-            margin-top: 67px;
-            margin-bottom: 30px;
+            margin-top: 50px;
+            margin-bottom: 50px;
         }
 
         .schedule__title{
@@ -261,91 +279,214 @@ legend {
             font-weight: 400;
             line-height: 0%; /* 0px */
             letter-spacing: 4.32px;
-            margin-top: 208px;
+           
     
         }
 
-        .schedule__container{
-            display: flex;
-            height: 300px;
-            justify-content: space-between;
-            margin-top: 40px;
+        .container{
 
-           
+            // display: flex;
 
-           
-            .schedule__time{
-                display: flex;
-                height: 300px;
-                justify-content: space-between;
-                gap: 5%;
+            // width: 1130px;
 
-                .schedule__left{
-                    width: 200px;
-                    .weekday, .saturday, .sunday{
-                        color: #E6E6E6;
-                        font-family: Shantell Sans;
-                        font-size: 24px;
-                        font-style: normal;
-                        font-weight: 700;
-                        line-height: 0%;
-                        letter-spacing: 4.32px;
-                        height: 40px;
+            .flex__container__left{
+
+                //width: 940px;
+
+                .schedule__container{
+                    display: flex;
+                    
+                    justify-content: space-between;
+                    margin-top: 40px;
+                    margin-bottom: 30px;
+        
+                   
+        
+                   
+                    .schedule__time{
+                        display: flex;
                         
+                        justify-content: space-between;
+                        gap: 5%;
+        
+                        .schedule__time__text{
+                            color: #E6E6E6;
+                            font-family: Shantell Sans;
+                            font-size: 24px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 0%;
+                            letter-spacing: 4.32px;
+        
+                            .text__yellow{
+                                color: #F6A91A;
+                            }
+                        }
+        
+                        .schedule__left{
+                            width: 220px;
+                            .weekday, .saturday, .sunday{
+                                color: #E6E6E6;
+                                font-family: Shantell Sans;
+                                font-size: 24px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 0%;
+                                letter-spacing: 4.32px;
+                                height: 40px;
+                                
+                            }
+                        }
+        
                     }
+        
+        
+                   
+        
+                    .schedule__r{
+                        width: 220px;
+                        .time__first, .time__second, .weekend{
+                            color: #E6E6E6;
+                            font-family: Shantell Sans;
+                            font-size: 24px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 0%;
+                            letter-spacing: 4.32px;
+                            height: 40px;
+                        }   
+                    }
+        
+        
+                    
+        
+                   
                 }
-
-            }
-            .schedule__r{
-                width: 200px;
-                .time__first, .time__second, .weekend{
+        
+        
+                .phone__container{
+                    position: relative;
                     color: #E6E6E6;
                     font-family: Shantell Sans;
                     font-size: 24px;
                     font-style: normal;
-                    font-weight: 700;
-                    line-height: 0%;
+                    font-weight: 500;
+                    line-height: normal;
                     letter-spacing: 4.32px;
-                    height: 40px;
-                }   
-            }
-            .map__container{
-                position: relative;
-                margin-top: -180px;
-                .map{
-                    width: 600px;
-                    height: 382px;
-                    flex-shrink: 0;
-                    border-radius: 36px;
-                    border: 1px solid #E6E6E6;
-                    
-                    // background: url('/images/map.svg'), lightgray 50% / cover no-repeat;
+                    margin-bottom: 40px;
+                    margin-top: 40px;
+                    width: 690px;
+                    .phone__text{
+                        
+                    }
+        
+                    .phone__text::after{
+        
+                        content: ' ';
+                        background-image: url('/images/phone_icon.svg');
+                        width: 36px;
+                        height: 35.358px;
+                        flex-shrink: 0;
+                        position:absolute;
+                        left: -45px;
+                        top: 0px;
+                    }
+        
+                    .number__phone{
+        
+                        .text__yellow{
+                            color: #F6A91A;
+                        }
+        
+                    }
                 }
-
-                .map__addres{
+        
+                .adress__containter{
+                    position: relative;
                     color: #E6E6E6;
                     font-family: Shantell Sans;
-                    font-size: 18px;
+                    font-size: 24px;
                     font-style: normal;
                     font-weight: 500;
                     line-height: normal;
-                    letter-spacing: 3.24px;
-                    text-align: center;
-                    margin-top: 20px;
-                }
-                .map__addres::before{
-                    content: ' ';
-                    background-image: url('/images/addres.svg');
-                    width: 23.646px;
-                    height: 33.78px;
-                    flex-shrink: 0;
-                    position:absolute;
-                    left: 35px;
-                    top: 390px;
-                }
-            }
-        }
+                    letter-spacing: 4.32px;
         
+                    .adress__text{
+        
+                    }
+        
+                    .adress__text::after{
+        
+                        content: ' ';
+                        background-image: url('/images/addres.svg');
+                        width: 23.646px;
+                        height: 33.78px;
+                        flex-shrink: 0;
+                        position:absolute;
+                        left: -45px;
+                        top: 0px;
+                        
+                    }
+                }
+    
+    
+            }
+    
+    
+            .flex__container__r{
+                display: inline-block;
+                margin-top: 170px;
+                margin-right: 40px;
+                .map__container{
+
+                    width: 611px;
+                    height: 387px;
+                    flex-shrink: 0;
+                
+                    .map{
+                        // width: 600px;
+                        // height: 382px;
+                        // flex-shrink: 0;
+                        // border-radius: 36px;
+                        // border: 1px solid #E6E6E6;
+                        
+                        
+                        // background: url('/images/map.svg'), lightgray 50% / cover no-repeat;
+                    }
+        
+                    .map__addres{
+                        color: #E6E6E6;
+                        font-family: Shantell Sans;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        letter-spacing: 3.24px;
+                        text-align: center;
+                        margin-top: 20px;
+                        display: none;
+                    }
+                    .map__addres::before{
+                        content: ' ';
+                        background-image: url('/images/addres.svg');
+                        width: 23.646px;
+                        height: 33.78px;
+                        flex-shrink: 0;
+                        position:absolute;
+                        left: 35px;
+                        top: 390px;
+                        display: none;
+                    }
+                }
+    
+            }
+
+        }
+
+      
+      
+        
+      
     }
 
    
@@ -532,7 +673,7 @@ legend {
             letter-spacing: 4.32px;
             
             margin-top: 20px;
-            margin-bottom: 100px;
+            margin-bottom: 30px;
             
         }
         .more__info__repair{
@@ -582,6 +723,7 @@ legend {
             font-weight: 700;
             line-height: normal;
             letter-spacing: 7.56px;
+            
         }
 
         .repair__kind__wrapper{
@@ -592,7 +734,8 @@ legend {
             justify-content: space-between;
             gap: 50px;
             flex-wrap: wrap;
-
+            margin-top: 180px;
+            align-items: center;
             
 
             .reair__kind__item{
@@ -602,24 +745,40 @@ legend {
                 }
 
                 .repair__kind__text{
-
+                    color: #E6E6E6;
+                    text-align: center;
+                    font-family: Shantell Sans;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    letter-spacing: 2.88px;
+                    text-align: center;
                 }
 
                 .repair__kind__price{
-
+                    color: #F6A91A;
+                    font-family: Shantell Sans;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    letter-spacing: 2.88px;
+                    text-align: center;
                 }
             }
         }
     }
     
     height: 1080px;
-    background: url('/images/BG.svg');
+    background: url('/images/bg_repair.svg');
 }
 
 .our__works{
     background: #262626;
     background-image: url('/images/HDMI_1.svg');
     height: 470px;
+    display: none;
 
     .circles__our__works{
         display: -webkit-box;
@@ -826,6 +985,7 @@ legend {
 .news{
     background: #7b797a;
     height: 470px;
+    display: none;
     .news__wrapper{
         margin-left: 300px;
         margin-right: 300px;
@@ -952,6 +1112,7 @@ legend {
         margin-left: 300px;
         margin-right: 300px;
         .footer__container{
+            
             padding-top: 30px;
             display: -webkit-box;
 	        display: -webkit-flex;
@@ -961,7 +1122,48 @@ legend {
 	        -webkit-justify-content: space-between;
 	        -ms-flex-pack: space-between;
             justify-content: space-between;
+
+            .kv__logo{
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+                height: 59px;
+                width: 59px;
+            }
+
+            .copy{
+                color: #E6E6E6;
+                font-family: Shantell Sans;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: 2.88px;
+                position: relative;
+                
+                .blue{
+                    color: #1380FF;
+                    position: absolute;
+                    left: -27px;
+                }
+
+            }
+
+            .dezign{
+                color: #7B7A7A;
+                font-family: Shantell Sans;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                letter-spacing: 2.88px;
+                margin-top: 30px;
+            }
+
             .footer__left__text{
+                position: relative;
                 .footer__service__name{
                     color: #FFF;
                     font-family: Shantell Sans;
@@ -975,23 +1177,39 @@ legend {
                     }
                 }
                 .footer__address{
-                    color: #FFF;
+                    color: #E6E6E6;
                     font-family: Shantell Sans;
                     font-size: 16px;
                     font-style: normal;
-                    font-weight: 600;
+                    font-weight: 500;
                     line-height: normal;
                     letter-spacing: 2.88px;
+                    margin-bottom: 30px;
                     .address{
                         
                     }
                 }
+
+                .footer__address::after{
+                    content: ' ';
+                    background-image: url('/images/addres_b.svg');
+                    width: 21px;
+                    height: 30px;
+                    flex-shrink: 0;
+                    position:absolute;
+                    left: -30px;
+                    top: -10px;
+                }
+
                 .footer__vk__logo{
 
                 }
+
+
             }
             .footer__r__text{
                 .footer__contacts{
+                    position: relative;
                     .footer__contacts__text{
                         color: #FFF;
                         font-family: Shantell Sans;
@@ -1003,18 +1221,194 @@ legend {
                         
                     }
                     .footer__number__phone{
-                        color: #FFF;
+                        color: #E6E6E6;
                         font-family: Shantell Sans;
                         font-size: 16px;
                         font-style: normal;
-                        font-weight: 600;
+                        font-weight: 500;
                         line-height: normal;
                         letter-spacing: 2.88px;
+                       
+                    }
+
+                    .footer__number__phone::after{
+                        content: ' ';
+                    background-image: url('/images/phone_icon.svg');
+                    width: 36px;
+                    height: 35px;
+                    flex-shrink: 0;
+                    position:absolute;
+                    left: -50px;
+                    top: -10px;
                     }
                 }
             }
         }
     }
+}
+
+.pop_up{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(38, 38, 38, 0.85);
+    z-index: 2;
+
+    .pop_button{
+        z-index: 2;
+    }
+} 
+
+.pop_up_container{
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    
+
+    .pop_button{
+        margin: auto;
+        border-radius: 68px;
+        border: 3px solid #E6E6E6;
+        background: #1380FF;
+        width: 661.26px;
+        height: 86px;
+        flex-shrink: 0;
+        display: flex;
+        
+        .pop_button_text{
+            color: #E6E6E6;
+            text-align: center;
+            margin: auto;
+            font-family: Shantell Sans;
+            font-size: 47px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 8.46px;
+            align-self: center;
+            
+           
+        }
+        
+    }
+}
+
+.pop_up_body{
+    margin: auto;
+    height: 731px;
+    width: 1176px;
+    border-radius: 68px;
+    border: 3px solid #1380FF;
+    background: url(/images/bg_pop.svg);
+    background-color: #262626;
+
+    .pop_title{
+        
+        color: #E6E6E6;
+        text-align: center;
+        font-family: Shantell Sans;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 5.76px;
+        margin-top: 20px;
+    }
+
+    .pop_content{
+        margin-left: 300px;
+        margin-right: 300px;
+        
+        margin-bottom: 20px;
+
+        .pop_item_text{
+            color: #7B7A7A;
+            font-family: Shantell Sans;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 4.32px;
+            margin-bottom: 10px;
+        }
+
+        .pop__item{
+            position: relative;
+        }
+
+      
+
+        .pop_item_input{
+            width: 648px;
+            height: 42px;
+            flex-shrink: 0;
+            border-radius: 21px;
+            background: #E6E6E6;
+            margin-bottom: 20px;
+           
+        }
+
+        .placeholder{
+            position: absolute;
+            top: 50px;
+            left: 20px;
+
+            color: #262626;
+            font-family: Shantell Sans;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 3.6px;
+            
+
+        }
+
+        .pop__item:hover{
+            
+
+            .placeholder {
+                display: none;
+                
+            }
+        }
+
+        .pop__item input::placeholder {
+            opacity: 0.5;
+        }
+        
+      
+
+
+        .pop_item_input.last{
+            height: 138px;
+        }
+
+        .pop_item_input:focus{
+            //display: none;
+        }
+       
+
+        .pop_down_text{
+            color: #7B7A7A;
+            text-align: center;
+            font-family: Shantell Sans;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 4.32px;
+        }
+
+        
+        
+    }
+
 }
 
 
@@ -1024,55 +1418,353 @@ legend {
 
 
 
-    /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    .phone{
-        .phone__image{
-            
-            
-          }
-        }
-    }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    .phone{
-        .phone__image{
-            
-            
-            
-          }
-        }
-    }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    .phone{
-        .phone__image{
+//     /* Extra small devices (phones, 600px and down) */
+// @media only screen and (min-width: 600px) {
+//     .phone{
+//         display: none;
+//         .phone__image{
+            
+            
+//           }
+//         }
+
+
+//       .phone__wrapper{
+//             .phone__wrapper__text{
+//                 margin-right: 0;
+//                 .phone__sub__text{
+//                     font-size: 22px;
+//                 }
+//                 .phone__main__text{
+//                     font-size: 100px;
+//                 }
+//             }
+//         }
+
+//     }
+
+
+   
+
+
+// /* Small devices (portrait tablets and large phones, 600px and up) */
+// @media only screen and (min-width: 600px) {
+//     .phone{
+//         .phone__image{
+            
+            
+            
+//           }
+//         }
+//     }
+
+// /* Medium devices (landscape tablets, 768px and up) */
+// @media only screen and (min-width: 768px) {
+//     .phone{
+//         .phone__image{
            
             
-          }
+//           }
+//         }
+//     }
+
+// /* Large devices (laptops/desktops, 992px and up) */
+// @media only screen and (min-width: 992px) {
+//     .phone{
+        
+//         .phone__image{
+            
+            
+//           }
+//         }
+//     }
+
+// /* Extra large devices (large laptops and desktops, 1200px and up) */
+// @media only screen and (min-width: 1200px) {
+//     // .phone{
+//     //     display: none;
+//     //     .phone__image{
+            
+            
+//     //       }
+//     //     }
+
+//     //     .phone__wrapper{
+//     //         .phone__wrapper__text{
+//     //             .phone__sub__text{
+//     //                 font-size: 22px;
+//     //             }
+//     //             .phone__main__text{
+//     //                 font-size: 198px;
+//     //             }
+//     //         }
+//     //     }
+       
+//      }
+
+
+
+
+
+
+//      /* Extra small devices (phones, 600px and down) */
+// @media only screen and (max-width: 600px) {}
+
+// /* Small devices (portrait tablets and large phones, 600px and up) */
+// @media only screen and (min-width: 600px) {}
+
+// /* Medium devices (landscape tablets, 768px and up) */
+// @media only screen and (min-width: 768px) {}
+
+// /* Large devices (laptops/desktops, 992px and up) */
+// @media only screen and (min-width: 992px) {
+
+
+        // .phone{
+        //     display: none;
+        // }
+
+        // .phone__wrapper{
+        //     .phone__wrapper__text{
+        //         .phone__main__text{
+        //            text-align: left;
+        //             font-size: 98px;
+        //         }
+        //         .phone__sub__text{
+        //             margin-top: 0px;
+        //             text-align: left;
+        //         }
+        //     }
+        // }
+//}
+
+// /* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (max-width: 1200px) {
+
+    .wrapper{
+        .phone__wrapper{
+            height: 315px;
+        }
+        .footer{
+            background-size: contain;
+            .footer__wrapper{
+                margin-left: 50px;
+                margin-right: 50px;
+                .footer__container{
+                    .footer__left__text{
+                        .footer__address{
+                            margin-bottom: 11px;
+                        }
+                    }
+                }
+            }
+        }
+        .repair{
+           
+            background-repeat: no-repeat;
+            .repair__wrapper{
+                margin-left: 18rem;
+                margin-right: 5rem;
+            }
+        }
+        .phone__wrapper{
+            display: block;
+            background-size: contain;
+            .phone{
+                display: none;
+                .phone__image{
+                    display: none;
+                }
+            }
+        }
+        .about{
+          
+           height: 680px;
+           background-repeat: no-repeat;
+           
+           background-size: 100% 100%;
+                       .about__container{
+                margin-left: 440px;
+                margin-right: 220px;
+                .container{
+                    font-size: 20px;
+                    .flex__container__left{
+                            .schedule__container{
+                                .schedule__time{
+                                    .schedule__time__text{
+                                        // font-size: 20px;
+                                        // background-color: red;
+                                    }
+                                }
+                            }
+                    }
+                }
+                .about__text{
+                    font-size: 16px;
+                }
+                .container{
+                    .flex__container__r{
+                        .map__container{
+                            .map{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                .about__line{
+                    width: 500px;
+                }
+            }
         }
     }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    .phone{
-        .phone__image{
-            
-            
-          }
-        }
-    }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    .phone{
-        .phone__image{
-            
-            
-          }
-        }
+    .about .about__container .schedule__title{
+        font-size: 16px;
     }
 
     
+    .about .about__container .container .flex__container__left .phone__container{
+       font-size: 16px;
+    }
+
+    .about .about__container .container .flex__container__left .schedule__container .schedule__time .schedule__time__text{
+        font-size: 16px;
+    }
+
+    .phone__wrapper .phone__wrapper__text .phone__main__text{
+        font-size: 148px;
+    }
+
+    .about .about__container .container .flex__container__left .adress__containter .adress__text{
+        font-size: 16px;
+    }
+
+    
+
+   
+
+   
+
+
+
+
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+// @media (min-width: 1281px) {
+  
+//     /* CSS */
+// //    .about{
+// //     background-size: 100% 100%;
+   
+// //     background-repeat: no-repeat;  
+    
+// //     .about__container{
+// //             .container{
+// //                 width: 0px;
+// //                 .flex__container__r{
+// //                     .map__container{
+// //                         width: 500px;
+// //                         display: none;
+// //                     }
+// //                 }
+// //             }
+// //         .about__line{
+// //             width: 700px;
+// //         }
+// //     }
+// //    }
+
+// //    .map{
+// //     display: none;
+// //    }
+
+// //    .repair{
+// //     background-size: auto;
+// //     max-width: 100%;
+// //     background-repeat: no-repeat;
+// //     background-clip: padding-box;
+// //     background-origin: padding-box;
+// //     .repair__wrapper{
+// //         margin-left: 200px;
+// //         margin-right: 200px;
+// //     }
+// //    }
+
+// //    .phone__wrapper{
+// //     display: block;
+// //     margin: 0 auto;
+// //     .phone__wrapper__text{
+// //         margin-right: 0px;
+// //     }
+// //     .phone{
+// //         display: none;
+// //     }
+// //    }
+    
+//   }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    
+    /* CSS */
+    
+  }
+
+    
+ }

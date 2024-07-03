@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,400;1,300;1,400&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -29,7 +32,7 @@
     </div>
     
     <div class="about">
-        <div class="circles">
+        <!-- <div class="circles">
             
             <div class="left__circles">
                 <div class="first__circle"><img src="images/rectangle-7.svg" alt=""></div>
@@ -41,7 +44,7 @@
                 
             </div>
             
-        </div>
+        </div> -->
         
         <div class="about__container">
             <div class="about__title">О нас</div>
@@ -50,50 +53,102 @@
                 <div class="second__line"></div>
                 <div class="third__line"></div>
             </div>
-            <div class="about__text">Мы представляем сервисный центр TechFIX, который всегда готов отремонтировать вашу технику и помочь вам даже в самых тяжелых ситуациях. Чтобы обратиться к нам, перемещайтесь ниже по странице и оставляйте заявку на ремонт по подсказке на синем фоне.<br><br>Сроки ремонта варьируются от 20 минут до 14 дней. Всё звисит от сложности починки и наличия у нас сменных деталей. 
+            <div class="about__text">Мы представляем <span class="text__yellow">сервисный центр TechFIX</span>, который всегда готов отремонтировать вашу технику и помочь вам даже в самых тяжелых ситуациях. <span class="bold__text">Чтобы обратиться к нам, перемещайтесь ниже по странице и оставляйте заявку на ремонт по подсказке на синем фоне.</span> <br><span class="text__red">Сроки ремонта варьируются от 20 минут до 14 дней.</span> Всё звисит от сложности починки и наличия у нас сменных деталей. 
             </div>
             <div class="about__line"></div>
             <div class="schedule__title">Наш график работы:</div>
-            <div class="schedule__container">
+
+
+            <div class="container">
+
+                <div class="flex__container__left">
+
+                    <div class="schedule__container">
+                    
+                        <div class="schedule__time">
+                            <div class="schedule__time__text">без выходных с <span class="text__yellow"> 9:00 </span> до <span class="text__yellow">18:00</span></div>
+                           
+                            <!-- <div class="schedule__left">
+                                <ul>
+                                    <li><div class="weekday">по будням</div></li>
+                                    <li><div class="saturday">в субботу</div></li>
+                                    <li><div class="sunday">воскресенье</div>     </li>
+                                </ul>
+                                
+                                
+                                 
+                            </div>
+                            <div class="schedule__r">
+                                <div class="time__first">8:00 – 18:00</div>
+                                <div class="time__second">9:00 – 17:00</div>
+                                <div class="weekend">выходной</div>
+                            </div> -->
+                        </div> 
+                    </div>
+                    <div class="phone__container">
+                        <div class="phone__text">Номер телефона для онлайн консультации: </div>
+                        <div class="number__phone"> <span class="text__yellow">+7 (961) 289-73-02</span> </div>
+                    </div>  
+                    <div class="adress__containter">
+                        <div class="adress__text">г. Каменск-Шахтинский,<br>ул. Ворошилова 20</div>
+                    </div>
+        
+    
+                </div>
+    
+                <div class="flex__container__r">
+    
+                    <div class="map__container">
+                        <div class="map">
+
+                            <div style="position:relative;overflow:hidden; right: 200px;"><a href="https://yandex.ru/maps/11043/kamensk-shakhtinsky/?utm_medium=mapframe&utm_source=maps" 
+                                style="color:#eee;font-size:12px;position:absolute;top:0px;">Каменск‑Шахтинский</a>
+                                
+                                <a href="https://yandex.ru/maps/11043/kamensk-shakhtinsky/house/ulitsa_voroshilova_20/YEkYdABhTEEBQFpifX9wd39qZw==/?ll=40.271546%2C48.316393&utm_medium=mapframe&utm_source=maps&z=17.21" 
+                                style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Ворошилова, 20 — Яндекс Карты</a>
+                                
+                                <iframe src="https://yandex.ru/map-widget/v1/?ll=40.271546%2C48.316393&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxNTM0MjczMzA4EnvQoNC-0YHRgdC40Y8sINCg0L7RgdGC0L7QstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCDQmtCw0LzQtdC90YHQui3QqNCw0YXRgtC40L3RgdC60LjQuSwg0YPQu9C40YbQsCDQktC-0YDQvtGI0LjQu9C-0LLQsCwgMjAiCg0RFiFCFfxDQUI%2C&z=17.21" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+
+
+                        </div>
+                        <!-- <img class="map" src="images/map.svg" alt="map"> -->
+
+
+
+                      
+
+
+                        <!-- <div style="position:relative;overflow:hidden; ">
+                            <a href="https://yandex.ru/maps/org/pyatyorochka/227022438411/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px; ">Пятёрочка</a>
+                            <a href="https://yandex.ru/maps/109773/krasnoye-selo/category/supermarket/184108079/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Супермаркет в Красном Селе</a>
+                            <iframe  src="https://yandex.ru/map-widget/v1/?ll=30.097621%2C59.743923&mode=poi&poi%5Bpoint%5D=30.091471%2C59.745402&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D227022438411&z=14" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;  ">
+                            </iframe></div> -->
+        
+                            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8050.840386730436!2d30.016076237393303!3d59.704381921371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696165283734999%3A0xefd1bbe5e598407e!2z0JvQsNCz0L7Qu9C-0LLQviwg0JvQtdC90LjQvdCz0YDQsNC00YHQutCw0Y8g0L7QsdC7Lg!5e0!3m2!1sru!2sru!4v1691615186443!5m2!1sru!2sru" width="600" height="450" style="border:0; background-color: black;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                        <div class="map__addres">г. Каменск-Шахтинский, ул. Ворошилова 20</div>
+                    </div>
+                    <!-- <div class="more__info">Больше информации</div>
                 
-                <div class="schedule__time">
-                    <div class="schedule__left">
-                        <ul>
-                            <li><div class="weekday">по будням</div></li>
-                            <li><div class="saturday">в субботу</div></li>
-                            <li><div class="sunday">воскресенье</div>     </li>
-                        </ul>
-                        
-                        
-                         
+                    <div class="arrows__container">
+                        <div class="first__arrow"><img src="images/arrow1.svg" alt=""></div>
+                        <div class="second__arrow"><img src="images/arrow2.svg" alt=""></div>
+                        <div class="third__arrow"><img src="images/arrow3.svg" alt=""></div>
+                        <div class="tourth__arrow"><img src="images/arrow4.svg" alt=""></div>
                     </div>
-                    <div class="schedule__r">
-                        <div class="time__first">8:00 – 18:00</div>
-                        <div class="time__second">9:00 – 17:00</div>
-                        <div class="weekend">выходной</div>
-                    </div>
+                    <div class="arrow__bcg"></div> -->
+    
                 </div>
-                <div class="map__container">
-                    <!-- <div class="map"></div> -->
-                    <img class="map" src="images/map.svg" alt="map">
-                    <div class="map__addres">г. Каменск-Шахтинский, ул. Ворошилова 20</div>
-                </div>
+    
+
+
             </div>
 
-            <!-- <div class="more__info">Больше информации</div>
-        
-            <div class="arrows__container">
-                <div class="first__arrow"><img src="images/arrow1.svg" alt=""></div>
-                <div class="second__arrow"><img src="images/arrow2.svg" alt=""></div>
-                <div class="third__arrow"><img src="images/arrow3.svg" alt=""></div>
-                <div class="tourth__arrow"><img src="images/arrow4.svg" alt=""></div>
-            </div>
-            <div class="arrow__bcg"></div> -->
+          
+           
+           
 
         </div>
 
-        
-        
         <!-- <div class="more__info">Больше информации</div>
         
             <div class="arrows__container">
@@ -112,7 +167,7 @@
                 <div class="second__line__repair"></div>
                 <div class="third__line__repair"></div>
             </div>
-            <div class="repair__text">У нас можно заказать ремонт вашего устройства... *Здесь можно разместить подробную информацию о подаче заявки на ремонт: что заказчик должен сделать, чтобы его заявку рассмотрели и тд. Например, позвонить на указанный телефон и тогда его заявку на ремонт определённой техники примут.*</div>
+            <div class="repair__text">У нас можно заказать ремонт вашего устройства. Чтобы это сделать, вам нужно нажать на любую из расположенных ниже кнопок и заполнить заявку на ремонт. После этого, наш менеджер с вами свяжется.</div>
             <!-- <div class="more__info__repair">Больше информации</div>
             <div class="arrows__container__repair">
                 <div class="first__arrow__repair"><img src="images/arrow1.svg" alt=""></div>
@@ -132,8 +187,8 @@
                         <path d="M121.128 64.1578L133.927 51.3587C134.399 50.887 134.285 50.0945 133.7 49.7743L128.311 46.8262C127.922 46.613 127.438 46.6823 127.124 46.9964L119.95 54.1705C119.667 54.4534 119.243 54.5405 118.872 54.3919L109.003 50.4446C108.74 50.3394 108.534 50.1276 108.437 49.8618L104.999 40.5308C104.864 40.1648 104.954 39.7538 105.23 39.478L112.405 32.3034C112.725 31.9831 112.79 31.4874 112.563 31.0953L109.107 25.1258C108.778 24.5571 107.999 24.4551 107.535 24.9197L94.7121 37.7422C94.4538 38.0004 94.3569 38.3789 94.4593 38.7296L98.62 52.9789C98.7224 53.3295 98.6255 53.708 98.3672 53.9663L78.7953 73.5382C78.4048 73.9287 78.4048 74.5619 78.7953 74.9524L83.9172 80.0744C84.3078 80.4649 84.9409 80.4649 85.3315 80.0744L104.903 60.5024C105.162 60.2442 105.54 60.1473 105.891 60.2496L120.14 64.4106C120.491 64.513 120.869 64.4161 121.128 64.1578Z" fill="#F6A91A"/>
                         <path d="M121.128 61.1419L133.927 48.3428C134.399 47.8711 134.285 47.0786 133.7 46.7584L128.311 43.8103C127.922 43.5972 127.438 43.6665 127.124 43.9805L119.95 51.1547C119.667 51.4375 119.243 51.5246 118.872 51.376L109.003 47.4287C108.74 47.3235 108.534 47.1117 108.437 46.846L104.999 37.5149C104.864 37.1489 104.954 36.7379 105.23 36.4621L112.405 29.2875C112.725 28.9672 112.79 28.4715 112.563 28.0794L109.107 22.1099C108.778 21.5413 107.999 21.4392 107.535 21.9038L94.7121 34.7263C94.4538 34.9846 94.3569 35.3631 94.4593 35.7137L98.62 49.963C98.7224 50.3136 98.6255 50.6921 98.3672 50.9504L78.7953 70.5223C78.4048 70.9129 78.4048 71.546 78.7953 71.9366L83.9172 77.0585C84.3078 77.449 84.9409 77.449 85.3315 77.0585L104.903 57.4866C105.162 57.2283 105.54 57.1314 105.891 57.2338L120.14 61.3947C120.491 61.4971 120.869 61.4002 121.128 61.1419Z" fill="#E6E6E6"/>
                         </svg>
-                    <div class="repair__kind__text"></div>
-                    <div class="repair__kind__price"></div>
+                    <div class="repair__kind__text">Телефоны,<br> планшеты</div>
+                    <div class="repair__kind__price">ОТ 500₽</div>
                 </div>
                 <div class="reair__kind__item">
                     <img class="repair__kind__img" src="" alt="">
@@ -145,8 +200,8 @@
                         <path d="M125.127 105.143L137.926 92.3435C138.398 91.8718 138.284 91.0793 137.699 90.7591L132.311 87.8111C131.921 87.5979 131.438 87.6672 131.124 87.9812L123.95 95.1554C123.667 95.4383 123.243 95.5253 122.871 95.3768L113.003 91.4295C112.74 91.3243 112.534 91.1125 112.436 90.8467L108.998 81.5156C108.863 81.1496 108.954 80.7386 109.229 80.4628L116.404 73.2883C116.724 72.9679 116.789 72.4722 116.562 72.0802L113.106 66.1106C112.777 65.542 111.999 65.4399 111.534 65.9045L98.7115 78.727C98.4532 78.9853 98.3563 79.3638 98.4587 79.7144L102.619 93.9637C102.722 94.3143 102.625 94.6929 102.367 94.9511L82.7947 114.523C82.4041 114.914 82.4041 115.547 82.7947 115.937L87.9166 121.059C88.3072 121.45 88.9403 121.45 89.3308 121.059L108.903 101.487C109.161 101.229 109.54 101.132 109.89 101.234L124.14 105.395C124.49 105.498 124.869 105.401 125.127 105.143Z" fill="#E6E6E6"/>
                         </svg>
                         
-                    <div class="repair__kind__text"></div>
-                    <div class="repair__kind__price"></div>
+                    <div class="repair__kind__text">Телевизоры</div>
+                    <div class="repair__kind__price">ОТ 500₽</div>
                 </div>
                 <div class="reair__kind__item">
                     <img class="repair__kind__img" src="" alt="">
@@ -172,8 +227,8 @@
                         <path d="M100.127 75.1426L112.926 62.3435C113.398 61.8718 113.284 61.0793 112.699 60.7591L107.311 57.8111C106.921 57.5979 106.438 57.6672 106.124 57.9812L98.9496 65.1554C98.6667 65.4383 98.2425 65.5253 97.8711 65.3768L88.0028 61.4295C87.7399 61.3243 87.5338 61.1125 87.4359 60.8467L83.9981 51.5156C83.8633 51.1496 83.9536 50.7386 84.2294 50.4628L91.4039 43.2883C91.7243 42.9679 91.7892 42.4722 91.5623 42.0802L88.1065 36.1106C87.7773 35.542 86.9985 35.4399 86.5339 35.9045L73.7115 48.727C73.4532 48.9853 73.3563 49.3638 73.4587 49.7144L77.6194 63.9637C77.7218 64.3143 77.6249 64.6929 77.3666 64.9511L57.7947 84.5231C57.4041 84.9136 57.4041 85.5468 57.7947 85.9373L62.9166 91.0593C63.3072 91.4498 63.9403 91.4498 64.3308 91.0593L83.9028 71.4873C84.1611 71.229 84.5396 71.1321 84.8902 71.2345L99.1397 75.3955C99.4903 75.4978 99.8688 75.4009 100.127 75.1426Z" fill="#E6E6E6"/>
                         </svg>
                         
-                    <div class="repair__kind__text"></div>
-                    <div class="repair__kind__price"></div>
+                    <div class="repair__kind__text">Компьютеры</div>
+                    <div class="repair__kind__price">ОТ 500₽</div>
                 </div>
                 <div class="reair__kind__item">
                     <img class="repair__kind__img" src="" alt="">
@@ -189,8 +244,8 @@
                         <path d="M103.127 75.1426L115.926 62.3435C116.398 61.8718 116.284 61.0793 115.699 60.7591L110.311 57.8111C109.921 57.5979 109.438 57.6672 109.124 57.9812L101.95 65.1554C101.667 65.4383 101.243 65.5253 100.871 65.3768L91.0028 61.4295C90.7399 61.3243 90.5338 61.1125 90.4359 60.8467L86.9981 51.5156C86.8633 51.1496 86.9536 50.7386 87.2294 50.4628L94.4039 43.2883C94.7243 42.9679 94.7892 42.4722 94.5623 42.0802L91.1065 36.1106C90.7773 35.542 89.9985 35.4399 89.5339 35.9045L76.7115 48.727C76.4532 48.9853 76.3563 49.3638 76.4587 49.7144L80.6194 63.9637C80.7218 64.3143 80.6249 64.6929 80.3666 64.9511L60.7947 84.5231C60.4041 84.9136 60.4041 85.5468 60.7947 85.9373L65.9166 91.0593C66.3072 91.4498 66.9403 91.4498 67.3308 91.0593L86.9028 71.4873C87.1611 71.229 87.5396 71.1321 87.8902 71.2345L102.14 75.3955C102.49 75.4978 102.869 75.4009 103.127 75.1426Z" fill="#E6E6E6"/>
                         </svg>
                         
-                    <div class="repair__kind__text"></div>
-                    <div class="repair__kind__price"></div>
+                    <div class="repair__kind__text">Игровые<br>приставки</div>
+                    <div class="repair__kind__price">ОТ 1000₽</div>
                 </div>
                 <div class="reair__kind__item">
                     <img class="repair__kind__img" src="" alt="">
@@ -211,8 +266,8 @@
                         <path d="M125.127 75.1426L137.926 62.3435C138.398 61.8718 138.284 61.0793 137.699 60.7591L132.311 57.8111C131.921 57.5979 131.438 57.6672 131.124 57.9812L123.95 65.1554C123.667 65.4383 123.243 65.5253 122.871 65.3768L113.003 61.4295C112.74 61.3243 112.534 61.1125 112.436 60.8467L108.998 51.5156C108.863 51.1496 108.954 50.7386 109.229 50.4628L116.404 43.2883C116.724 42.9679 116.789 42.4722 116.562 42.0802L113.106 36.1106C112.777 35.542 111.999 35.4399 111.534 35.9045L98.7115 48.727C98.4532 48.9853 98.3563 49.3638 98.4587 49.7144L102.619 63.9637C102.722 64.3143 102.625 64.6929 102.367 64.9511L82.7947 84.5231C82.4041 84.9136 82.4041 85.5468 82.7947 85.9373L87.9166 91.0593C88.3072 91.4498 88.9403 91.4498 89.3308 91.0593L108.903 71.4873C109.161 71.229 109.54 71.1321 109.89 71.2345L124.14 75.3955C124.49 75.4978 124.869 75.4009 125.127 75.1426Z" fill="#E6E6E6"/>
                         </svg>
                         
-                    <div class="repair__kind__text"></div>
-                    <div class="repair__kind__price"></div>
+                    <div class="repair__kind__text">Бытовая<br>техника</div>
+                    <div class="repair__kind__price">ОТ 500₽</div>
                 </div>
                 <div class="reair__kind__item">
                     <img class="repair__kind__img" src="" alt="">
@@ -232,8 +287,8 @@
                         <path d="M76.1271 93.1426L88.9262 80.3435C89.3979 79.8718 89.2843 79.0793 88.6991 78.7591L83.3109 75.8111C82.9213 75.5979 82.4378 75.6672 82.1238 75.9812L74.9496 83.1554C74.6667 83.4383 74.2425 83.5253 73.8711 83.3768L64.0028 79.4295C63.7399 79.3243 63.5338 79.1125 63.4359 78.8467L59.9981 69.5156C59.8633 69.1496 59.9536 68.7386 60.2294 68.4628L67.4039 61.2883C67.7243 60.9679 67.7892 60.4722 67.5623 60.0802L64.1065 54.1106C63.7773 53.542 62.9985 53.4399 62.5339 53.9045L49.7115 66.727C49.4532 66.9853 49.3563 67.3638 49.4587 67.7144L53.6194 81.9637C53.7218 82.3143 53.6249 82.6929 53.3666 82.9511L33.7947 102.523C33.4041 102.914 33.4041 103.547 33.7947 103.937L38.9166 109.059C39.3072 109.45 39.9403 109.45 40.3308 109.059L59.9028 89.4873C60.1611 89.229 60.5396 89.1321 60.8902 89.2345L75.1397 93.3955C75.4903 93.4978 75.8688 93.4009 76.1271 93.1426Z" fill="#E6E6E6"/>
                         </svg>
                         
-                    <div class="repair__kind__text"></div>
-                    <div class="repair__kind__price"></div>
+                    <div class="repair__kind__text">Стиральные<br>машины</div>
+                    <div class="repair__kind__price">ОТ 1000₽</div>
                 </div>
             </div>
             
@@ -304,20 +359,86 @@
         <div class="footer__wrapper">
             <div class="footer__container">
                 <div class="footer__left__text">
-                    <div class="footer__service__name"><span class="service">Сервисный центр</span> *Название*</div>
-                    <div class="footer__address"><span class="address">Адрес:</span> г. Каменск-Шахтинский, ул. Ворошилова 20</div>
-                    <link rel="stylesheet" href=""><img src="" alt="vk logo" class="footer__vk__logo">
+                    <!-- <div class="footer__service__name"><span class="service">Сервисный центр</span> *Название*</div> -->
+                    <div class="footer__address"><span class="address"></span> г. Каменск-Шахтинский, ул. Ворошилова 20</div>
+                    <div class="copy"> <span class="blue">©</span>2023 Сервисный центр «TechFIX»</div>
+                    <!-- <link rel="stylesheet" href=""><img src="" alt="vk logo" class="footer__vk__logo"> -->
                 </div>
+                <img src="images/vk-logo.svg" class="kv__logo">
                 <div class="footer__r__text">
                     <div class="footer__contacts">
-                        <div class="footer__contacts__text">Контакты:</div>
+                        <!-- <div class="footer__contacts__text">Контакты:</div> -->
                         <a href="+79612897302" class="footer__number__phone">+79612897302</a>
+                        <div class="dezign">Дизайн: Maddleq vk</div>
                     </div>
                 </div>
             </div>
             
         </div>
     </footer>
+
+    <div class="pop_up">
+        <div class="pop_up_container">
+            <div class="pop_up_body">
+                <div class="pop_title">Для подачи заявки на ремонт <br> нужно указать:</div>
+                <div class="pop_content">
+                    <form action="" class="pop_form">
+                        <div class="pop__item">
+                            <div class="pop_item_text">ФИО</div>
+                            <input type="text" class="pop_item_input" placeholder="ФИО">
+                            <!-- <span class="placeholder">Фамилия</span> -->
+                        </div>
+                        <div class="pop__item">
+                            <div class="pop_item_text">Ваш номер телефона:</div>
+                            <input type="text" class="pop_item_input" placeholder="Номер телефона" >
+                            <!-- <span class="placeholder">Номер телефона</span> -->
+                        </div>
+                        <div class="pop__item">
+                            <div class="pop_item_text">Устройство и его модель:</div>
+                            <input type="text" class="pop_item_input"  placeholder="Устройство и его модель">
+                            <!-- <span class="placeholder">Устройство</span> -->
+                        </div>
+                        <div class="pop__item">
+                            <div class="pop_item_text">Причина обращения:</div>
+                            <input type="text" class="pop_item_input last" placeholder="Причина обращения" >
+                            <!-- <span class="placeholder">Причина</span> -->
+                        </div>
+                       
+                    </form>
+                    <div class="pop_down_text">После размещения заявки, наш менеджер с вами свяжется</div>
+                    
+                </div>
+            </div>
+            <div class="pop_button">
+                <a href="" class="pop_button_text"><div class="pop_button_text">Отправить заявку</div></a> 
+            </div>
+        </div>
+        
     </div>
+
+    </div>
+
+    <script>
+
+// // Получаем все поля ввода на странице
+// const inputFields = document.querySelectorAll('input');
+// var item = document.getElementsByClassName('placeholder');
+// // Для каждого поля ввода добавляем обработчик события 'input'
+// inputFields.forEach(input => {
+//   input.addEventListener('input', () => {
+//     // Проверяем, пустое ли поле ввода
+//     if (input.value === '') {
+//       // Если поле ввода пустое, то скрываем placeholder
+//       input.setAttribute('placeholder', '');
+//       item.style.display = 'none';
+//     }
+//     else{
+//         input.setAttribute('placeholder', 'qq');
+//     }
+//   });
+// });
+
+    </script>
+
 </body>
 </html>
