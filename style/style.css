@@ -1003,11 +1003,66 @@ body {
   letter-spacing: 4.32px;
 }
 
+@media only screen and (max-width: 1920px) {
+  .wrapper .about .about__container .container {
+    display: flex;
+  }
+}
+@media screen and (max-width: 1707px) {
+  .wrapper .repair .repair__wrapper {
+    margin-left: 400px;
+    margin-right: 400px;
+  }
+}
+@media screen and (max-width: 1707px) {
+  .wrapper .phone__wrapper .phone__wrapper__text .phone__main__text {
+    font-size: 178px;
+  }
+}
+@media screen and (max-width: 1700px) {
+  .wrapper .about .about__container {
+    margin-right: 150px;
+  }
+}
+@media screen and (max-width: 1536px) {
+  .wrapper .about .about__container {
+    margin-right: 150px;
+  }
+}
+@media screen and (max-width: 1530px) {
+  .wrapper .about .about__container .container .flex__container__r .map__container {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 1528px) {
+  .wrapper .about .about__container .about__line {
+    width: 975px;
+  }
+}
+@media screen and (max-width: 1512px) {
+  .wrapper .about .about__container .container .flex__container__r .map__container {
+    width: 100%;
+    height: 100%;
+  }
+  .wrapper .about .about__container .container .flex__container__r .map__container .photo {
+    width: 400px;
+  }
+}
+@media (max-width: 1210px) {
+  .wrapper .phone__wrapper .phone .phone__image {
+    display: none;
+  }
+}
 @media only screen and (max-width: 1200px) {
+  .wrapper {
+    max-width: 1200px;
+  }
   .wrapper .phone__wrapper {
     height: 315px;
   }
   .wrapper .footer {
+    max-width: 1200px;
     background-size: contain;
   }
   .wrapper .footer .footer__wrapper {
@@ -1018,6 +1073,7 @@ body {
     margin-bottom: 11px;
   }
   .wrapper .repair {
+    max-width: 1200px;
     background-repeat: no-repeat;
   }
   .wrapper .repair .repair__wrapper {
@@ -1035,6 +1091,8 @@ body {
     display: none;
   }
   .wrapper .about {
+    max-width: 1200px;
+    width: 100%;
     height: 680px;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -1069,6 +1127,9 @@ body {
   }
   .about .about__container .container .flex__container__left .adress__containter .adress__text {
     font-size: 16px;
+  }
+  .wrapper .about .about__container .about__line {
+    width: 500px;
   }
   /* 
     ##Device = Desktops

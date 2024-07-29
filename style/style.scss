@@ -1,7 +1,10 @@
+
+
 * {
 	padding: 0px;
 	margin: 0px;
 	border: none;
+    
 }
 
 *,
@@ -1540,14 +1543,196 @@ body{
         // }
 //}
 
+@media only screen and (max-width: 1920px){
+    .wrapper{
+        .phone__wrapper{
+            .phone__wrapper__text{
+                   
+            }
+        } 
+        .about{
+            .about__container{
+                .container{
+                    display: flex;
+                }
+            }  
+        }
+    }
+}
+
+@media screen and (max-width: 1707px) {
+    .wrapper{
+        .repair{
+            .repair__wrapper{
+                margin-left: 400px;
+                margin-right: 400px;
+                .repair__kind__wrapper{
+                    //margin-top: 10px;
+                }
+            }
+        }
+    }   
+
+
+    
+}
+
+@media screen and (max-width: 1707px){
+    .wrapper{
+        .phone__wrapper{
+            .phone__wrapper__text{
+                .phone__main__text{
+                    font-size: 178px;
+                }
+            }
+        }
+    }   
+}
+
+
+@media screen and (max-width: 1700px){
+    .wrapper{
+        .about{
+            .about__container{
+                margin-right: 150px;
+
+                .container{
+                    .flex__container__r{
+                        .map__container{
+                           // width: 100%;
+                           // height: 100%;
+                        }
+                    }
+                }  
+
+            }
+        }
+    } 
+}
+
+@media screen and (max-width: 1536px){
+    .wrapper{
+        .about{
+            .about__container{
+                margin-right: 150px;
+
+                .container{
+                    .flex__container__r{
+                        .map__container{
+                           // width: 100%;
+                          //  height: 100%;
+                        }
+                    }
+                }  
+
+            }
+        }
+    } 
+    
+    
+}
+
+
+
+@media screen and (max-width: 1530px){
+    .wrapper{
+        .about{
+            .about__container{
+              //  margin-right: 120px;
+
+                .container{
+                    .flex__container__r{
+                        .map__container{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }  
+
+            }
+        }
+    } 
+    
+    
+}
+
+@media screen and (max-width: 1528px){
+    .wrapper{
+        .about{
+            .about__container{
+                .about__line{
+                    width: 975px;
+                }
+            }
+        }
+    }   
+}
+
+
+@media screen and (max-width: 1512px){
+    .wrapper{
+        .about{
+            .about__container{
+              //  margin-right: 100px;
+
+                .container{
+                    .flex__container__r{
+                        .map__container{
+                            width: 100%;
+                            height: 100%;
+                            .photo{
+                                width: 400px;
+                                
+                            }
+                        }
+                    }
+                }  
+
+            }
+        }
+    } 
+    
+    
+}
+
+
+
+
+@media screen and (max-width: 1500px){
+
+}
+
+
+
+
+@media (max-width: 1210px){
+    .wrapper{
+        .phone__wrapper{
+
+            .phone{
+
+                .phone__image{
+                    display: none;
+                }
+            }
+
+        }  
+    }
+
+    
+} 
+
+
 // /* Extra large devices (large laptops and desktops, 1200px and up) */
  @media only screen and (max-width: 1200px) {
 
     .wrapper{
+        max-width: 1200px;
         .phone__wrapper{
             height: 315px;
         }
         .footer{
+            max-width: 1200px;
             background-size: contain;
             .footer__wrapper{
                 margin-left: 50px;
@@ -1562,6 +1747,7 @@ body{
             }
         }
         .repair{
+            max-width: 1200px;
            
             background-repeat: no-repeat;
             .repair__wrapper{
@@ -1580,7 +1766,8 @@ body{
             }
         }
         .about{
-          
+            max-width: 1200px;
+          width: 100%;
            height: 680px;
            background-repeat: no-repeat;
            
@@ -1640,6 +1827,10 @@ body{
 
     .about .about__container .container .flex__container__left .adress__containter .adress__text{
         font-size: 16px;
+    }
+
+    .wrapper .about .about__container .about__line{
+        width: 500px;
     }
 
     
