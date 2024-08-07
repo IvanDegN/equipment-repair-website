@@ -191,7 +191,6 @@ body {
 .about {
   background: #262626;
   background-image: url("/images/bg_about.svg");
-  height: 1080px;
 }
 .about .about__title {
   color: #E6E6E6;
@@ -347,8 +346,6 @@ body {
   margin-right: 40px;
 }
 .about .about__container .container .flex__container__r .map__container {
-  width: 611px;
-  height: 387px;
   flex-shrink: 0;
 }
 .about .about__container .container .flex__container__r .map__container .map__addres {
@@ -1004,8 +1001,23 @@ body {
 }
 
 @media only screen and (max-width: 1920px) {
+  html body div.wrapper div.about {
+    background-size: 100vw;
+    background-repeat: no-repeat;
+  }
+  html body div.wrapper div.repair {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+@media only screen and (max-width: 1920px) {
   .wrapper .about .about__container .container {
     display: flex;
+  }
+}
+@media screen and (max-width: 1724px) {
+  .wrapper .about .about__container .about__line {
+    width: 955px;
   }
 }
 @media screen and (max-width: 1707px) {
@@ -1024,6 +1036,11 @@ body {
     margin-right: 150px;
   }
 }
+@media screen and (max-width: 1589px) {
+  .wrapper .about .about__container .about__line {
+    width: 875px;
+  }
+}
 @media screen and (max-width: 1536px) {
   .wrapper .about .about__container {
     margin-right: 150px;
@@ -1037,7 +1054,7 @@ body {
 }
 @media screen and (max-width: 1528px) {
   .wrapper .about .about__container .about__line {
-    width: 975px;
+    width: 875px;
   }
 }
 @media screen and (max-width: 1512px) {
@@ -1095,6 +1112,9 @@ body {
   }
 }
 @media screen and (max-width: 1487px) {
+  .wrapper .about .about__container .about__line {
+    width: 775px;
+  }
   .wrapper .repair .repair__wrapper .repair__kind__wrapper {
     gap: 39px;
   }
@@ -1302,7 +1322,15 @@ body {
     gap: 60px;
   }
 }
+@media screen and (max-width: 1361px) {
+  .wrapper .about .about__container .about__line {
+    width: 665px;
+  }
+}
 @media screen and (max-width: 1317px) {
+  .wrapper .about .about__container .about__line {
+    width: 695px;
+  }
   .wrapper .repair .repair__wrapper {
     margin-right: 0px;
     margin-left: 0px;
@@ -1325,17 +1353,20 @@ body {
     margin-right: 0px;
     margin-left: 0px;
   }
-  .wrapper .repair .repair__wrapper .kind__wrapper {
+  .wrapper .repair .repair__wrapper html body div.wrapper div.repair div.repair__wrapper div.repair__wrp .kind__wrapper {
     margin-left: 270px;
     margin-right: 50px;
   }
   .wrapper .repair .repair__wrapper .repair__wrp {
     margin-left: 400px;
-    margin-right: 400px;
+    margin-right: 190px;
   }
   .wrapper .repair .repair__wrapper .repair__kind__wrapper {
     flex-wrap: wrap;
     gap: 60px;
+  }
+  .wrapper .about .about__container .about__line {
+    width: 785px;
   }
 }
 @media (max-width: 1210px) {
@@ -1343,12 +1374,23 @@ body {
     display: none;
   }
 }
+@media only screen and (max-width: 1201px) {
+  html body div.wrapper div.phone__wrapper div.phone {
+    display: none;
+    width: 0px;
+    height: 445px;
+  }
+}
 @media only screen and (max-width: 1200px) {
   .wrapper {
     max-width: 1200px;
   }
   .wrapper .phone__wrapper {
-    height: 315px;
+    height: 445px;
+  }
+  .wrapper .phone__wrapper .phone__wrapper__text {
+    margin-right: 5px;
+    margin-left: 5px;
   }
   .wrapper .footer {
     max-width: 1200px;
@@ -1444,6 +1486,41 @@ body {
     ##Device = Most of the Smartphones Mobiles (Portrait)
     ##Screen = B/w 320px to 479px
   */
+}
+@media only screen and (max-width: 1200px) and (max-width: 767px) {
+  .wrapper .repair {
+    background-size: auto;
+  }
+  .wrapper .repair .repair__wrapper {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .wrapper .repair .repair__wrapper .kind__wrapper {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .wrapper .repair .repair__wrapper .kind__wrapper .repair__kind__wrapper {
+    gap: 1px;
+    margin-top: 0px;
+  }
+  .wrapper .repair .repair__wrapper .repair__wrp {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .wrapper .repair .repair__wrapper .repair__wrp .line__container__repair .second__line__repair {
+    width: 302px;
+  }
+  .wrapper .about .about__container {
+    margin-left: 160px;
+    margin-right: 120px;
+  }
+  .wrapper .phone__wrapper {
+    height: 325px;
+  }
+  .wrapper .phone__wrapper .phone__wrapper__text .phone__main__text {
+    font-size: 100px;
+    margin-bottom: 35px;
+  }
 }
 @media only screen and (max-width: 1200px) and (min-width: 1025px) and (max-width: 1280px) {
   /* CSS */
