@@ -2658,17 +2658,83 @@ body{
             } 
 
             .about{
+                background-image: none;
+                height: 1480px;
                 .about__container{
-                    margin-left: 160px;
-                    margin-right: 120px;
+                    .schedule__title{
+                        
+                        font-family: Shantell Sans;
+                        font-size: 25px;
+                        font-weight: 500;
+                        line-height: 0px;
+                        letter-spacing: 18%;
+                        text-align: left;
+                        position: relative;
+                        padding-left: 70px;
+                        &::after{
+                            content: ' ';
+                            background-image: url('/images/shedule.svg');
+                            width: 102px;
+                            height: 102px;
+                            flex-shrink: 0;
+                            position:absolute;
+                            left: -50px;
+                            top: -30px;
+                            
+                            }
+
+                    }
+                    
+                    .container{
+                        flex-wrap: wrap;
+                        .flex__container__left {
+                            .schedule__container{
+                                .schedule__time{
+                                    .schedule__time__text{
+                                        font-family: Shantell Sans;
+                                        font-size: 25px;
+                                        font-weight: 500;
+                                        line-height: 0px;
+                                        letter-spacing: 18%;
+                                        text-align: left;
+                                        padding-left: 70px;
+                                    }
+                                } 
+                                
+                            }
+                        }
+                    }
+                    .about__line{
+                        width: 606px;
+                        border-radius: 7px;
+                        background: rgb(246, 169, 26);
+                    }
+                    margin-left: 80px;
+                    margin-right: 80px;
+                    div.about__text{
+                        font-family: Shantell Sans;
+                        font-size: 20px;
+                        font-weight: 400;
+                        line-height: 40px;
+                        letter-spacing: 18%;
+                        text-align: left;
+                        
+                    }
                 }
             } 
             .phone__wrapper{
-                height: 325px;
+                height: 335px;
                 .phone__wrapper__text{
+                    .phone__sub__text{
+                      
+                        font-size: 22px;
+                        
+                        
+                    }
                     .phone__main__text{
-                        font-size: 100px;
+                        font-size: 140px;
                         margin-bottom: 35px;
+                        
                     }
                 }
             }
