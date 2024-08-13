@@ -2633,21 +2633,28 @@ body{
 
         .wrapper{
             .repair{
-                background-size: auto;
+                background-image: url('/images/BG_mobile.svg');
                 .repair__wrapper{
+                    .repair__kind__text{
+                        display: none;
+                    }
                     margin-left: 10px;
                     margin-right: 10px;
                     .kind__wrapper{
+                       // margin-right: 200px;
+                       // margin-left: 200px;
                         .repair__kind__wrapper{
                             gap: 1px;
-                            margin-top: 0px;
+                            margin-top: 25vw;
+                            
                         }
-                        margin-right: 0px;
-                        margin-left: 0px;
+                        margin-right: 10vw;
+                        margin-left: 10vw;
+                        
                     }
                     .repair__wrp{
-                        margin-left: 10px;
-                        margin-right: 10px;
+                        margin-left: 70px;
+                        margin-right: 70px;
                         .line__container__repair{
                             .second__line__repair{
                                 width: 302px;
@@ -2661,6 +2668,9 @@ body{
                 background-image: none;
                 height: 1480px;
                 .about__container{
+
+                    
+
                     .schedule__title{
                         
                         font-family: Shantell Sans;
@@ -2670,24 +2680,86 @@ body{
                         letter-spacing: 18%;
                         text-align: left;
                         position: relative;
-                        padding-left: 70px;
+                        padding-left: 50px;
                         &::after{
                             content: ' ';
                             background-image: url('/images/shedule.svg');
-                            width: 102px;
-                            height: 102px;
+                            width: 50px;
+                            height: 50px;
                             flex-shrink: 0;
                             position:absolute;
-                            left: -50px;
-                            top: -30px;
+                            left: -20px;
+                            top: -5 px;
                             
                             }
 
                     }
                     
                     .container{
+                        .flex__container__r{
+                            margin: 0 auto;
+                           // position: relative;
+                            .map__container{
+                                //position: absolute;
+
+                            }
+                        }
                         flex-wrap: wrap;
                         .flex__container__left {
+                            .adress__containter{
+                                position: relative;
+                                .adress__text{
+                                    font-size: 25px;
+                                    margin-left: 50px;
+                                    margin-bottom: 6vw;
+                                    &::after{
+                                        content: ' ';
+                                        background-image: url('/images/mob_addres.svg');
+                                        width: 50px;
+                                        height: 50px;
+                                        flex-shrink: 0;
+                                        position:absolute;
+                                        left: -20px;
+                                        top: 13px;
+                                    }
+                                }
+                            }
+                            .phone__container{
+                                position: relative;
+                                .phone__text{
+
+                                    font-family: Shantell Sans;
+                                    font-size: 25px;
+                                    font-weight: 500;
+                                    
+                                    letter-spacing: 18%;
+                                    text-align: left;
+                                    margin-bottom: 20px;
+                                    margin-left: 50px;
+                                   
+
+                                    &::after{
+                                        content: ' ';
+                                        background-image: url('/images/big_phone.svg');
+                                        width: 50px;
+                                        height: 50px;
+                                        flex-shrink: 0;
+                                        position:absolute;
+                                        left: -20px;
+                                        top: 20px;
+                                    }
+                                }
+                                .number__phone{
+                                    font-family: Shantell Sans;
+                                    font-size: 25px;
+                                    font-weight: 500;
+                                    line-height: 0px;
+                                    letter-spacing: 18%;
+                                    text-align: left;
+                                    margin-left: 50px;
+                                }
+                            } 
+
                             .schedule__container{
                                 .schedule__time{
                                     .schedule__time__text{
@@ -2697,7 +2769,7 @@ body{
                                         line-height: 0px;
                                         letter-spacing: 18%;
                                         text-align: left;
-                                        padding-left: 70px;
+                                        padding-left: 50px;
                                     }
                                 } 
                                 
@@ -2722,6 +2794,10 @@ body{
                     }
                 }
             } 
+
+
+            
+
             .phone__wrapper{
                 height: 335px;
                 .phone__wrapper__text{

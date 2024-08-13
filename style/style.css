@@ -1489,23 +1489,26 @@ body {
 }
 @media only screen and (max-width: 1200px) and (max-width: 767px) {
   .wrapper .repair {
-    background-size: auto;
+    background-image: url("/images/BG_mobile.svg");
   }
   .wrapper .repair .repair__wrapper {
     margin-left: 10px;
     margin-right: 10px;
   }
+  .wrapper .repair .repair__wrapper .repair__kind__text {
+    display: none;
+  }
   .wrapper .repair .repair__wrapper .kind__wrapper {
-    margin-right: 0px;
-    margin-left: 0px;
+    margin-right: 10vw;
+    margin-left: 10vw;
   }
   .wrapper .repair .repair__wrapper .kind__wrapper .repair__kind__wrapper {
     gap: 1px;
-    margin-top: 0px;
+    margin-top: 25vw;
   }
   .wrapper .repair .repair__wrapper .repair__wrp {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 70px;
+    margin-right: 70px;
   }
   .wrapper .repair .repair__wrapper .repair__wrp .line__container__repair .second__line__repair {
     width: 302px;
@@ -1526,20 +1529,72 @@ body {
     letter-spacing: 18%;
     text-align: left;
     position: relative;
-    padding-left: 70px;
+    padding-left: 50px;
   }
   .wrapper .about .about__container .schedule__title::after {
     content: " ";
     background-image: url("/images/shedule.svg");
-    width: 102px;
-    height: 102px;
+    width: 50px;
+    height: 50px;
     flex-shrink: 0;
     position: absolute;
-    left: -50px;
-    top: -30px;
+    left: -20px;
+    top: -5 px;
   }
   .wrapper .about .about__container .container {
     flex-wrap: wrap;
+  }
+  .wrapper .about .about__container .container .flex__container__r {
+    margin: 0 auto;
+  }
+  .wrapper .about .about__container .container .flex__container__left .adress__containter {
+    position: relative;
+  }
+  .wrapper .about .about__container .container .flex__container__left .adress__containter .adress__text {
+    font-size: 25px;
+    margin-left: 50px;
+    margin-bottom: 6vw;
+  }
+  .wrapper .about .about__container .container .flex__container__left .adress__containter .adress__text::after {
+    content: " ";
+    background-image: url("/images/mob_addres.svg");
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    position: absolute;
+    left: -20px;
+    top: 13px;
+  }
+  .wrapper .about .about__container .container .flex__container__left .phone__container {
+    position: relative;
+  }
+  .wrapper .about .about__container .container .flex__container__left .phone__container .phone__text {
+    font-family: Shantell Sans;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 18%;
+    text-align: left;
+    margin-bottom: 20px;
+    margin-left: 50px;
+  }
+  .wrapper .about .about__container .container .flex__container__left .phone__container .phone__text::after {
+    content: " ";
+    background-image: url("/images/big_phone.svg");
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    position: absolute;
+    left: -20px;
+    top: 20px;
+  }
+  .wrapper .about .about__container .container .flex__container__left .phone__container .number__phone {
+    font-family: Shantell Sans;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 0px;
+    letter-spacing: 18%;
+    text-align: left;
+    margin-left: 50px;
   }
   .wrapper .about .about__container .container .flex__container__left .schedule__container .schedule__time .schedule__time__text {
     font-family: Shantell Sans;
@@ -1548,7 +1603,7 @@ body {
     line-height: 0px;
     letter-spacing: 18%;
     text-align: left;
-    padding-left: 70px;
+    padding-left: 50px;
   }
   .wrapper .about .about__container .about__line {
     width: 606px;
