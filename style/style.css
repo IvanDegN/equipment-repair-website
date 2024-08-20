@@ -1504,7 +1504,7 @@ body {
   }
   .wrapper .repair .repair__wrapper .kind__wrapper .repair__kind__wrapper {
     gap: 1px;
-    margin-top: 25vw;
+    margin-top: 15vw;
   }
   .wrapper .repair .repair__wrapper .repair__wrp {
     margin-left: 70px;
@@ -1627,6 +1627,60 @@ body {
   .wrapper .phone__wrapper .phone__wrapper__text .phone__main__text {
     font-size: 140px;
     margin-bottom: 35px;
+  }
+  .wrapper .footer {
+    position: relative;
+    height: 255px;
+  }
+  .wrapper .footer .footer__wrapper {
+    margin-right: 87px;
+    margin-left: 87px;
+  }
+  .wrapper .footer .footer__wrapper .footer__container .footer__r__section .kv__logo {
+    position: absolute;
+    top: 80px;
+    right: 190px;
+    width: 100px;
+    height: 100px;
+  }
+  .wrapper .footer .footer__wrapper .footer__container .footer__left__text .icon_phone {
+    position: relative;
+  }
+  .wrapper .footer .footer__wrapper .footer__container .footer__left__text .icon_phone::after {
+    content: " ";
+    background-image: url("/images/phone_icon.svg");
+    width: 36px;
+    height: 35px;
+    flex-shrink: 0;
+    position: absolute;
+    left: -50px;
+    top: -10px;
+  }
+  .wrapper .footer .footer__wrapper .footer__container .footer__left__text .phone__mob {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .wrapper .footer .footer__wrapper .footer__container .footer__left__text .footer__mobile__number__phone {
+    color: #E6E6E6;
+    font-family: Shantell Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 2.88px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .wrapper .footer .footer__wrapper .footer__container .footer__r__text .footer__contacts {
+    position: static;
+  }
+  .wrapper .footer .footer__wrapper .footer__container .footer__r__text .footer__contacts .dezign {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+  }
+  .wrapper .footer .footer__wrapper .footer__container .footer__r__text .footer__contacts .footer__number__phone {
+    display: none;
   }
 }
 @media only screen and (max-width: 1200px) and (min-width: 1025px) and (max-width: 1280px) {
