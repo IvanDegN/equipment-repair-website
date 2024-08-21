@@ -3,8 +3,8 @@
 * {
 	padding: 0px;
 	margin: 0px;
-	border: none;
-    
+	//border: solid red;
+    border: 0px;
     
     
 }
@@ -2626,7 +2626,7 @@ body{
         width: 500px;
     }
 
-
+ }
 
 
     @media only screen and (max-width: 767px) {
@@ -2696,7 +2696,9 @@ body{
                     }
                     
                     .container{
+                        //display: block;
                         .flex__container__r{
+                            display: block;
                             margin: 0 auto;
                            // position: relative;
                             .map__container{
@@ -2725,13 +2727,16 @@ body{
                                 }
                             }
                             .phone__container{
+                                display: block;
                                 position: relative;
+                                line-height: normal;
+                                width: 100%;
                                 .phone__text{
 
                                     font-family: Shantell Sans;
                                     font-size: 25px;
                                     font-weight: 500;
-                                    
+                                    line-height: normal;
                                     letter-spacing: 18%;
                                     text-align: left;
                                     margin-bottom: 20px;
@@ -2753,7 +2758,7 @@ body{
                                     font-family: Shantell Sans;
                                     font-size: 25px;
                                     font-weight: 500;
-                                    line-height: 0px;
+                                    line-height: normal;
                                     letter-spacing: 18%;
                                     text-align: left;
                                     margin-left: 50px;
@@ -2766,7 +2771,7 @@ body{
                                         font-family: Shantell Sans;
                                         font-size: 25px;
                                         font-weight: 500;
-                                        line-height: 0px;
+                                        line-height: normal;
                                         letter-spacing: 18%;
                                         text-align: left;
                                         padding-left: 50px;
@@ -2799,7 +2804,7 @@ body{
             
 
             .phone__wrapper{
-                height: 335px;
+                height: 260px;
                 .phone__wrapper__text{
                     .phone__sub__text{
                       
@@ -2808,7 +2813,13 @@ body{
                         
                     }
                     .phone__main__text{
-                        font-size: 140px;
+                        //font-size: 140px;
+                      
+
+
+                        
+
+                        font-size: calc(50px + 90 * (100vw - 307px ) / 1613 );
                         margin-bottom: 35px;
                         
                     }
@@ -2830,7 +2841,7 @@ body{
                     .footer__r__section{
                         .kv__logo{
                             position: absolute;
-                            top: 80px;
+                            top: 60px;
                             right: 190px;
                             width: 100px;
                             height: 100px;
@@ -2882,7 +2893,7 @@ body{
                             .dezign{
                                 position: absolute;
                                 right: 30px;
-                                bottom: 30px;
+                                bottom: 10px;
                             }
                              
 
@@ -2896,7 +2907,7 @@ body{
             }
            } 
             
-        }
+        }   
 
 
         
@@ -2907,6 +2918,269 @@ body{
 
         
     }
+
+
+    @media only screen and (max-width: 695px) {
+        .wrapper{
+            .about{
+                .about__container{
+                    .container{
+                        .flex__container__left{
+                            .adress__containter{
+                                .adress__text{
+                                    font-size: 20px;
+                                }
+                            } 
+                            .phone__container{
+                                .number__phone{
+                                    .text__yellow{
+                                        font-size: 20px;
+                                    }
+                                } 
+                                .phone__text{
+                                    //display: block;
+                                    font-size: 20px;
+                                    word-break: break-all;
+                                    word-wrap: break-word;
+                                    max-width: 400px;
+                                }
+                            } 
+                            .schedule__container{
+                                .schedule__time{
+                                    .schedule__time__text{
+                                        font-size: 20px;
+                                    }
+                                } 
+                            } 
+                        } 
+                    } 
+                    .schedule__title{
+                        font-size: 20px;
+                    }
+                    .about__line{
+                        
+                        width: 100%;
+                    }
+                } 
+            }
+             
+        } 
+        
+    }
+
+    @media only screen and (max-width: 664px){
+        .wrapper{
+            .repair{
+                .repair__wrapper{
+                    .kind__wrapper{
+                        .repair__kind__wrapper{
+                            margin-top: 5vw;
+                        }
+                    } 
+                } 
+            } 
+        } 
+    }
+
+    @media only screen and (max-width: 612px){
+        .wrapper{
+            .repair{
+                .repair__wrapper{
+                    .kind__wrapper{
+                        .repair__kind__wrapper{
+                            margin-top: 4vw;
+                        }
+                    } 
+                } 
+            } 
+        } 
+    }
+
+
+    @media only screen and (max-width: 615px){
+        .wrapper{
+            .about{
+                .about__container{
+                    .container{
+                        .flex__container__r{
+                            .map__container{
+                                img.photo{
+                                    width: 250px;
+                                }
+                            } 
+                        } 
+                    } 
+                } 
+            } 
+        } 
+    }
+
+ 
+
+    // @media only screen and (max-width: 583px) {
+    //     .wrapper{
+    //         .about{
+    //             .about__container{
+    //                 .about__line{
+    //                     width: 416px;
+    //                 }
+    //             } 
+    //         } 
+    //     } 
+        
+    // }
+
+
+    @media only screen and (max-width: 593px){
+        .wrapper{
+            .repair{
+                .repair__wrapper{
+                    .kind__wrapper{
+                        .repair__kind__wrapper{
+                            margin-top: 1vw;
+                        }
+                    } 
+                } 
+            } 
+        } 
+    }
+
+    @media only screen and (max-width: 551px) {
+        .wrapper{
+            .repair{
+                .repair__wrapper{
+                    .repair__wrp{
+                        margin-left: 20px;
+                        margin-right: 20px;
+                    }
+                } 
+            } 
+            .about{
+                .about__container{
+                    margin-right: 30px;
+                    margin-left: 30px;
+                    .schedule__title{
+                        //font-size: 16px;
+                    }
+                    .container{
+                        .flex__container__left{
+                            .adress__containter{
+                                .adress__text{
+                                    //font-size: 16px;
+                                }
+                            }
+                            .phone__container{
+                                .number__phone{
+                                    .text__yellow{
+                                        //font-size: 16px;
+                                    }
+                                } 
+                                .phone__text{
+                                    //font-size: 16px;
+                                    //max-width: 261px;
+                                }
+                            } 
+                            .schedule__container{
+                                .schedule__time{
+                                    .schedule__time__text{
+                                        //font-size: 16px;
+                                    }
+                                } 
+                            } 
+                        } 
+                    } 
+                } 
+            }
+        }  
+    }
+
+    
+
+    @media only screen and (max-width: 505px){
+        .wrapper{
+            
+            .about{
+                .about__container{
+                    .schedule__title{
+                        line-height: normal ;
+                    }
+                    .container{
+                        .flex__container__r{
+                            .map__container{
+                                .photo{
+                                    //width: 250px;
+                                }
+                            } 
+                        } 
+                       // display: block;
+                        .flex__container__left{
+                            .phone__container{
+                                width: 100%;
+                            }
+                            .schedule__container{
+                                .schedule__time{
+                                    .schedule__time__text{
+                                        line-height: normal;
+                                    }
+                                } 
+                            }
+                        }  
+                        //display: block;
+                    }
+                    .about__line{
+                        width: 446px;
+                    }
+                } 
+            } 
+        } 
+    }
+
+    @media only screen and (max-width: 505px){
+        .wrapper{
+            .about{
+                .about__container{
+                    div.about__line{
+                        width: 396px;
+                    }
+                } 
+            } 
+        } 
+    }
+
+
+@media only screen and (max-width: 471px){
+    .wrapper{
+        .repair{
+            .repair__wrapper{
+                .repair__wrp{
+                    .line__container__repair{
+                        .second__line__repair{
+                            width: 200px;
+                        }
+                    } 
+                } 
+            } 
+        } 
+    } 
+}
+
+@media only screen and (max-width: 456px){
+    .wrapper{
+        .about{
+            .about__container{
+                .container{
+                    .flex__container__r{
+                        .map__container{
+                            img.photo{
+                                width: 180px;
+                            }
+                        } 
+                    } 
+                } 
+            } 
+        } 
+    } 
+}
 
    
 
@@ -3031,4 +3305,4 @@ body{
   }
 
     
- }
+ 

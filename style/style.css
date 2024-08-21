@@ -1,7 +1,7 @@
 * {
   padding: 0px;
   margin: 0px;
-  border: none;
+  border: 0px;
 }
 
 *,
@@ -1462,32 +1462,8 @@ body {
   .wrapper .about .about__container .about__line {
     width: 500px;
   }
-  /* 
-    ##Device = Desktops
-    ##Screen = 1281px to higher resolution desktops
-  */
-  /* 
-    ##Device = Laptops, Desktops
-    ##Screen = B/w 1025px to 1280px
-  */
-  /* 
-    ##Device = Tablets, Ipads (portrait)
-    ##Screen = B/w 768px to 1024px
-  */
-  /* 
-    ##Device = Tablets, Ipads (landscape)
-    ##Screen = B/w 768px to 1024px
-  */
-  /* 
-    ##Device = Low Resolution Tablets, Mobiles (Landscape)
-    ##Screen = B/w 481px to 767px
-  */
-  /* 
-    ##Device = Most of the Smartphones Mobiles (Portrait)
-    ##Screen = B/w 320px to 479px
-  */
 }
-@media only screen and (max-width: 1200px) and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .wrapper .repair {
     background-image: url("/images/BG_mobile.svg");
   }
@@ -1545,6 +1521,7 @@ body {
     flex-wrap: wrap;
   }
   .wrapper .about .about__container .container .flex__container__r {
+    display: block;
     margin: 0 auto;
   }
   .wrapper .about .about__container .container .flex__container__left .adress__containter {
@@ -1566,12 +1543,16 @@ body {
     top: 13px;
   }
   .wrapper .about .about__container .container .flex__container__left .phone__container {
+    display: block;
     position: relative;
+    line-height: normal;
+    width: 100%;
   }
   .wrapper .about .about__container .container .flex__container__left .phone__container .phone__text {
     font-family: Shantell Sans;
     font-size: 25px;
     font-weight: 500;
+    line-height: normal;
     letter-spacing: 18%;
     text-align: left;
     margin-bottom: 20px;
@@ -1591,7 +1572,7 @@ body {
     font-family: Shantell Sans;
     font-size: 25px;
     font-weight: 500;
-    line-height: 0px;
+    line-height: normal;
     letter-spacing: 18%;
     text-align: left;
     margin-left: 50px;
@@ -1600,7 +1581,7 @@ body {
     font-family: Shantell Sans;
     font-size: 25px;
     font-weight: 500;
-    line-height: 0px;
+    line-height: normal;
     letter-spacing: 18%;
     text-align: left;
     padding-left: 50px;
@@ -1619,13 +1600,13 @@ body {
     text-align: left;
   }
   .wrapper .phone__wrapper {
-    height: 335px;
+    height: 260px;
   }
   .wrapper .phone__wrapper .phone__wrapper__text .phone__sub__text {
     font-size: 22px;
   }
   .wrapper .phone__wrapper .phone__wrapper__text .phone__main__text {
-    font-size: 140px;
+    font-size: calc(50px + 90 * (100vw - 307px) / 1613);
     margin-bottom: 35px;
   }
   .wrapper .footer {
@@ -1638,7 +1619,7 @@ body {
   }
   .wrapper .footer .footer__wrapper .footer__container .footer__r__section .kv__logo {
     position: absolute;
-    top: 80px;
+    top: 60px;
     right: 190px;
     width: 100px;
     height: 100px;
@@ -1677,24 +1658,130 @@ body {
   .wrapper .footer .footer__wrapper .footer__container .footer__r__text .footer__contacts .dezign {
     position: absolute;
     right: 30px;
-    bottom: 30px;
+    bottom: 10px;
   }
   .wrapper .footer .footer__wrapper .footer__container .footer__r__text .footer__contacts .footer__number__phone {
     display: none;
   }
 }
-@media only screen and (max-width: 1200px) and (min-width: 1025px) and (max-width: 1280px) {
+@media only screen and (max-width: 695px) {
+  .wrapper .about .about__container .container .flex__container__left .adress__containter .adress__text {
+    font-size: 20px;
+  }
+  .wrapper .about .about__container .container .flex__container__left .phone__container .number__phone .text__yellow {
+    font-size: 20px;
+  }
+  .wrapper .about .about__container .container .flex__container__left .phone__container .phone__text {
+    font-size: 20px;
+    word-break: break-all;
+    word-wrap: break-word;
+    max-width: 400px;
+  }
+  .wrapper .about .about__container .container .flex__container__left .schedule__container .schedule__time .schedule__time__text {
+    font-size: 20px;
+  }
+  .wrapper .about .about__container .schedule__title {
+    font-size: 20px;
+  }
+  .wrapper .about .about__container .about__line {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 664px) {
+  .wrapper .repair .repair__wrapper .kind__wrapper .repair__kind__wrapper {
+    margin-top: 5vw;
+  }
+}
+@media only screen and (max-width: 612px) {
+  .wrapper .repair .repair__wrapper .kind__wrapper .repair__kind__wrapper {
+    margin-top: 4vw;
+  }
+}
+@media only screen and (max-width: 615px) {
+  .wrapper .about .about__container .container .flex__container__r .map__container img.photo {
+    width: 250px;
+  }
+}
+@media only screen and (max-width: 593px) {
+  .wrapper .repair .repair__wrapper .kind__wrapper .repair__kind__wrapper {
+    margin-top: 1vw;
+  }
+}
+@media only screen and (max-width: 551px) {
+  .wrapper .repair .repair__wrapper .repair__wrp {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .wrapper .about .about__container {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+}
+@media only screen and (max-width: 505px) {
+  .wrapper .about .about__container .schedule__title {
+    line-height: normal;
+  }
+  .wrapper .about .about__container .container .flex__container__left .phone__container {
+    width: 100%;
+  }
+  .wrapper .about .about__container .container .flex__container__left .schedule__container .schedule__time .schedule__time__text {
+    line-height: normal;
+  }
+  .wrapper .about .about__container .about__line {
+    width: 446px;
+  }
+}
+@media only screen and (max-width: 505px) {
+  .wrapper .about .about__container div.about__line {
+    width: 396px;
+  }
+}
+@media only screen and (max-width: 471px) {
+  .wrapper .repair .repair__wrapper .repair__wrp .line__container__repair .second__line__repair {
+    width: 200px;
+  }
+}
+@media only screen and (max-width: 456px) {
+  .wrapper .about .about__container .container .flex__container__r .map__container img.photo {
+    width: 180px;
+  }
+}
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+@media (min-width: 1025px) and (max-width: 1280px) {
   /* CSS */
 }
-@media only screen and (max-width: 1200px) and (min-width: 768px) and (max-width: 1024px) {
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
   /* CSS */
 }
-@media only screen and (max-width: 1200px) and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   /* CSS */
 }
-@media only screen and (max-width: 1200px) and (min-width: 481px) and (max-width: 767px) {
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
   /* CSS */
 }
-@media only screen and (max-width: 1200px) and (min-width: 320px) and (max-width: 480px) {
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
   /* CSS */
 }/*# sourceMappingURL=style.css.map */
