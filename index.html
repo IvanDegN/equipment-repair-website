@@ -103,15 +103,19 @@
 
                         <img src="images/map.jpg" alt="" class="photo">
 
-                        <div class="map" style="display: none;">
+                        <div class="map">
 
-                            <div style="position:relative;overflow:hidden; right: 200px;"><a href="https://yandex.ru/maps/11043/kamensk-shakhtinsky/?utm_medium=mapframe&utm_source=maps" 
-                                style="color:#eee;font-size:12px;position:absolute;top:0px;">Каменск‑Шахтинский</a>
+
+                            
+
+
+                            <div><a href="https://yandex.ru/maps/11043/kamensk-shakhtinsky/?utm_medium=mapframe&utm_source=maps" 
+                                style="color:#eee;font-size:12px;position:absolute;top:0px; ">Каменск‑Шахтинский</a>
                                 
                                 <a href="https://yandex.ru/maps/11043/kamensk-shakhtinsky/house/ulitsa_voroshilova_20/YEkYdABhTEEBQFpifX9wd39qZw==/?ll=40.271546%2C48.316393&utm_medium=mapframe&utm_source=maps&z=17.21" 
-                                style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Ворошилова, 20 — Яндекс Карты</a>
+                                style="color:#eee;font-size:12px;position:absolute;top:14px; ">Улица Ворошилова, 20 — Яндекс Карты</a>
                                 
-                                <iframe src="https://yandex.ru/map-widget/v1/?ll=40.271546%2C48.316393&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxNTM0MjczMzA4EnvQoNC-0YHRgdC40Y8sINCg0L7RgdGC0L7QstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCDQmtCw0LzQtdC90YHQui3QqNCw0YXRgtC40L3RgdC60LjQuSwg0YPQu9C40YbQsCDQktC-0YDQvtGI0LjQu9C-0LLQsCwgMjAiCg0RFiFCFfxDQUI%2C&z=17.21" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                                <iframe  class="map__frame" src="https://yandex.ru/map-widget/v1/?ll=40.271546%2C48.316393&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxNTM0MjczMzA4EnvQoNC-0YHRgdC40Y8sINCg0L7RgdGC0L7QstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCDQmtCw0LzQtdC90YHQui3QqNCw0YXRgtC40L3RgdC60LjQuSwg0YPQu9C40YbQsCDQktC-0YDQvtGI0LjQu9C-0LLQsCwgMjAiCg0RFiFCFfxDQUI%2C&z=17.21" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
 
 
                         </div>
@@ -452,6 +456,21 @@
 //   });
 // });
 
+
+    // Передавать это значение в параметр type у карты
+const DARK_MAP = 'custom#dark';
+ymaps.layer.storage.add(DARK_MAP, function DarkLayer() {
+    // Ссылка на темные тайлы Яндекс.Карт
+    // От стандартной отличается наличием &theme=dark
+    return new ymaps.Layer(
+      'https://core-renderer-tiles.maps.yandex.net/tiles?l=map&theme=dark&%c&%l&scale={{ scale }}',
+    );
+  });
+
+/* Связываем слой с типом карты */
+ymaps.mapType.storage.add(DARK_MAP, new ymaps.MapType('Dark Map', [DARK_MAP]));
+
+console.log("hiii!!!")
     </script>
 
 </body>

@@ -1,4 +1,5 @@
 * {
+  transition: 1s;
   padding: 0px;
   margin: 0px;
   border: 0px;
@@ -1000,12 +1001,48 @@ body {
   letter-spacing: 4.32px;
 }
 
+ymaps[class*="--marker"] {
+  filter: invert(1);
+}
+
+#document html body._map-widget-mobile._font_loaded._app_ready._map_ready._vector_ready div.body div.map-widget-app div div.map-widget-map-component ymaps.ymaps3x0--map ymaps.ymaps3x0--top-engine-container ymaps ymaps.ymaps3x0--layer.ymaps3x0--marker-layer {
+  filter: invert(1);
+}
+
+#document html body._map-widget-mobile._font_loaded._app_ready._map_ready._vector_ready div.body div.map-widget-app div div.map-widget-map-component ymaps.ymaps3x0--map ymaps.ymaps3x0--top-engine-container ymaps ymaps.ymaps3x0--layer.ymaps3x0--marker-layer ymaps.ymaps3x0--marker {
+  filter: invert(1);
+}
+
+.map__frame .yamaps .ymaps3x0--marker {
+  filter: invert(1);
+}
+
+.map__frame ymaps[class*="--marker"] {
+  filter: invert(1);
+}
+.map__frame [class*="--marker"] {
+  filter: invert(1);
+}
+.map__frame #document[class*="--marker"] {
+  filter: invert(1);
+}
+.map__frame .ymaps[class*="--marker"] {
+  filter: invert(1);
+}
+.map__frame .ymaps3x0--marker {
+  filter: invert(1);
+}
+
+html body div.wrapper div.about div.about__container div.container div.flex__container__r div.map__container div.map #document html body._map-widget-mobile._font_loaded._app_ready._map_ready._vector_ready div.body div.map-widget-app div div.map-widget-map-component ymaps.ymaps3x0--map ymaps.ymaps3x0--top-engine-container ymaps ymaps.ymaps3x0--layer.ymaps3x0--marker-layer ymaps.ymaps3x0--marker {
+  filter: invert(1);
+}
+
 @media only screen and (max-width: 1920px) {
-  html body div.wrapper div.about {
+  .wrapper .about {
     background-size: 100vw;
     background-repeat: no-repeat;
   }
-  html body div.wrapper div.repair {
+  .wrapper .repair {
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -1061,9 +1098,6 @@ body {
   .wrapper .about .about__container .container .flex__container__r .map__container {
     width: 100%;
     height: 100%;
-  }
-  .wrapper .about .about__container .container .flex__container__r .map__container .photo {
-    width: 400px;
   }
 }
 @media screen and (max-width: 1507px) {
@@ -1438,9 +1472,6 @@ body {
   .wrapper .about .about__container .about__text {
     font-size: 16px;
   }
-  .wrapper .about .about__container .container .flex__container__r .map__container .map {
-    display: none;
-  }
   .wrapper .about .about__container .about__line {
     width: 500px;
   }
@@ -1470,6 +1501,7 @@ body {
   .wrapper .repair .repair__wrapper {
     margin-left: 10px;
     margin-right: 10px;
+    transition: 1s;
   }
   .wrapper .repair .repair__wrapper .repair__kind__text {
     display: none;
@@ -1481,6 +1513,7 @@ body {
   .wrapper .repair .repair__wrapper .kind__wrapper .repair__kind__wrapper {
     gap: 1px;
     margin-top: 15vw;
+    transition: 1s;
   }
   .wrapper .repair .repair__wrapper .repair__wrp {
     margin-left: 70px;
@@ -1523,6 +1556,31 @@ body {
   .wrapper .about .about__container .container .flex__container__r {
     display: block;
     margin: 0 auto;
+  }
+  .wrapper .about .about__container .container .flex__container__r .map__container .ymaps3x0--marker {
+    filter: invert(1);
+  }
+  .wrapper .about .about__container .container .flex__container__r .map__container .map {
+    width: 100%;
+    border: 1px red solid;
+    border-radius: 5%;
+  }
+  .wrapper .about .about__container .container .flex__container__r .map__container .map .ymaps3x0--marker {
+    filter: invert(1);
+  }
+  .wrapper .about .about__container .container .flex__container__r .map__container .map .map__frame {
+    border-radius: 5%;
+    filter: invert(1) grayscale(100%);
+  }
+  .wrapper .about .about__container .container .flex__container__r .map__container .map .map__frame .--marker {
+    filter: invert(1);
+  }
+  .wrapper .about .about__container .container .flex__container__r .map__container .map .map__frame .ymaps3x0--marker {
+    filter: invert(1);
+    z-index: 7;
+  }
+  .wrapper .about .about__container .container .flex__container__r .map__container .photo {
+    display: none;
   }
   .wrapper .about .about__container .container .flex__container__left .adress__containter {
     position: relative;
@@ -1616,6 +1674,7 @@ body {
   .wrapper .footer .footer__wrapper {
     margin-right: 87px;
     margin-left: 87px;
+    transition: 1s;
   }
   .wrapper .footer .footer__wrapper .footer__container .footer__r__section .kv__logo {
     position: absolute;
@@ -1623,6 +1682,7 @@ body {
     right: 190px;
     width: 100px;
     height: 100px;
+    transition: 1s;
   }
   .wrapper .footer .footer__wrapper .footer__container .footer__left__text .icon_phone {
     position: relative;
@@ -1659,9 +1719,16 @@ body {
     position: absolute;
     right: 30px;
     bottom: 10px;
+    transition: 1s ease;
+    z-index: 1;
   }
   .wrapper .footer .footer__wrapper .footer__container .footer__r__text .footer__contacts .footer__number__phone {
     display: none;
+  }
+}
+@media only screen and (max-width: 748px) {
+  .wrapper .repair .repair__wrapper .kind__wrapper .repair__kind__wrapper {
+    margin-top: 5vw;
   }
 }
 @media only screen and (max-width: 695px) {
@@ -1687,9 +1754,24 @@ body {
     width: 100%;
   }
 }
+@media only screen and (max-width: 682px) {
+  .wrapper .about .about__container .container .flex__container__r .map__container img.photo {
+    width: 250px;
+  }
+}
 @media only screen and (max-width: 664px) {
+  .wrapper .repair {
+    background-size: auto;
+  }
   .wrapper .repair .repair__wrapper .kind__wrapper .repair__kind__wrapper {
     margin-top: 5vw;
+  }
+}
+@media only screen and (max-width: 643px) {
+  .wrapper .footer .footer__wrapper {
+    margin-right: 7px;
+    margin-left: 54px;
+    transition: 1s;
   }
 }
 @media only screen and (max-width: 612px) {
@@ -1703,8 +1785,30 @@ body {
   }
 }
 @media only screen and (max-width: 593px) {
+  .wrapper .repair .repair__wrapper .repair__wrp {
+    margin-right: 5px;
+    margin-left: 5px;
+    transition: 1s;
+  }
   .wrapper .repair .repair__wrapper .kind__wrapper .repair__kind__wrapper {
     margin-top: 1vw;
+  }
+}
+@media only screen and (max-width: 579px) {
+  .wrapper .footer .footer__wrapper .footer__container .footer__r__section img.kv__logo {
+    right: 130px;
+    transition: 1s;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .wrapper .repair .repair__wrapper .kind__wrapper {
+    margin-right: 3vw;
+    margin-left: 3vw;
+  }
+}
+@media only screen and (max-width: 556px) {
+  .wrapper .about .about__container .container .flex__container__r .map__container img.photo {
+    width: 200px;
   }
 }
 @media only screen and (max-width: 551px) {
@@ -1715,6 +1819,14 @@ body {
   .wrapper .about .about__container {
     margin-right: 30px;
     margin-left: 30px;
+  }
+}
+@media only screen and (max-width: 511px) {
+  .wrapper .repair .repair__wrapper .repair__wrp .repair__title {
+    font-size: 6vw;
+  }
+  .wrapper .repair .repair__wrapper .repair__wrp .repair__text {
+    font-size: 4vw;
   }
 }
 @media only screen and (max-width: 505px) {
@@ -1732,8 +1844,50 @@ body {
   }
 }
 @media only screen and (max-width: 505px) {
-  .wrapper .about .about__container div.about__line {
+  .wrapper .about .about__container .about__line {
     width: 396px;
+  }
+}
+@media only screen and (max-width: 503px) {
+  .wrapper .footer .footer__wrapper .footer__container .footer__r__section .footer__r__text .footer__contacts .dezign {
+    bottom: 70px;
+    right: 220px;
+    transition: 1s ease;
+    z-index: 1;
+  }
+}
+@media only screen and (max-width: 495px) {
+  .wrapper .footer .footer__wrapper .footer__container .footer__r__section .footer__r__text .footer__contacts .dezign {
+    bottom: 70px;
+    right: 44vw;
+    transition: 1s ease;
+    z-index: 1;
+  }
+}
+@media only screen and (max-width: 486px) {
+  .wrapper .about .about__container .about__line {
+    width: 396px;
+  }
+}
+@media only screen and (max-width: 491px) {
+  .wrapper .repair .repair__wrapper .kind__wrapper .repair__kind__wrapper {
+    flex-wrap: wrap;
+  }
+  .wrapper .repair .repair__wrapper .kind__wrapper .repair__kind__wrapper .reair__kind__item {
+    flex-basis: 40%;
+  }
+}
+@media only screen and (max-width: 449px) {
+  .wrapper .about .about__container .container .flex__container__r .map__container img.photo {
+    width: 160px;
+  }
+}
+@media only screen and (max-width: 476px) {
+  .wrapper .footer .footer__wrapper .footer__container .footer__r__section .footer__r__text .footer__contacts .dezign {
+    bottom: 70px;
+    right: 42vw;
+    transition: 1s ease;
+    z-index: 1;
   }
 }
 @media only screen and (max-width: 471px) {
@@ -1741,9 +1895,127 @@ body {
     width: 200px;
   }
 }
+@media only screen and (max-width: 468px) {
+  .wrapper .about .about__container .about__line {
+    width: 376px;
+  }
+}
+@media only screen and (max-width: 461px) {
+  .wrapper .about .about__container .about__line {
+    width: 370px;
+  }
+}
+@media only screen and (max-width: 483px) {
+  .wrapper .footer .footer__wrapper .footer__container .footer__r__section img.kv__logo {
+    right: 70px;
+    width: 70px;
+    height: 70px;
+    transition: 1s;
+  }
+}
 @media only screen and (max-width: 456px) {
   .wrapper .about .about__container .container .flex__container__r .map__container img.photo {
-    width: 180px;
+    width: 160px;
+  }
+}
+@media only screen and (max-width: 455px) {
+  .wrapper .about .about__container .about__line {
+    width: 366px;
+  }
+}
+@media only screen and (max-width: 443px) {
+  .wrapper .footer .footer__wrapper .footer__container .footer__r__section img.kv__logo {
+    top: 90px;
+    transition: 1s;
+  }
+}
+@media only screen and (max-width: 442px) {
+  .wrapper .about .about__container .container .flex__container__r .map__container img.photo {
+    width: 120px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .wrapper .about .about__container .about__line {
+    width: 336px;
+  }
+}
+@media only screen and (max-width: 424px) {
+  .wrapper .footer .footer__wrapper .footer__container .footer__r__section .footer__r__text .footer__contacts .dezign {
+    bottom: 70px;
+    right: 35vw;
+    transition: 1s ease;
+    z-index: 1;
+  }
+}
+@media only screen and (max-width: 411px) {
+  .wrapper .header .text__wrapper .name {
+    margin-right: 10px;
+  }
+  .wrapper .header .logo__bcg .logo {
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 395px) {
+  .wrapper .about .about__container .about__line {
+    width: 306px;
+  }
+}
+@media only screen and (max-width: 384px) {
+  .wrapper .footer .footer__wrapper .footer__container .footer__r__section .footer__r__text .footer__contacts .dezign {
+    bottom: 70px;
+    right: 28vw;
+    transition: 1s ease;
+    z-index: 1;
+  }
+}
+@media only screen and (max-width: 371px) {
+  .wrapper .footer .footer__wrapper .footer__container .footer__r__section img.kv__logo {
+    right: 70px;
+    transition: 1s;
+  }
+}
+@media only screen and (max-width: 366px) {
+  .wrapper .about .about__container .about__line {
+    width: 276px;
+  }
+}
+@media only screen and (max-width: 364px) {
+  .wrapper .footer .footer__wrapper .footer__container .footer__r__section .footer__r__text .footer__contacts .dezign {
+    bottom: 70px;
+    right: 23vw;
+    transition: 1s ease;
+    z-index: 1;
+  }
+}
+@media only screen and (max-width: 351px) {
+  .wrapper .footer .footer__wrapper .footer__container .footer__r__section img.kv__logo {
+    right: 60px;
+    transition: 1s;
+  }
+}
+@media only screen and (max-width: 343px) {
+  .wrapper .footer .footer__wrapper .footer__container .footer__r__section img.kv__logo {
+    right: 40px;
+    transition: 1s;
+  }
+}
+@media only screen and (max-width: 323px) {
+  .wrapper .footer .footer__wrapper .footer__container .footer__r__section img.kv__logo {
+    right: 30px;
+    transition: 1s;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .wrapper .footer .footer__wrapper .footer__container .footer__r__section .footer__r__text .footer__contacts .dezign {
+    bottom: 70px;
+    right: 14vw;
+    transition: 1s ease;
+    z-index: 1;
+  }
+}
+@media only screen and (max-width: 313px) {
+  .wrapper .about .about__container .about__line {
+    width: 266px;
   }
 }
 /* 
@@ -1753,35 +2025,4 @@ body {
 /* 
   ##Device = Laptops, Desktops
   ##Screen = B/w 1025px to 1280px
-*/
-@media (min-width: 1025px) and (max-width: 1280px) {
-  /* CSS */
-}
-/* 
-  ##Device = Tablets, Ipads (portrait)
-  ##Screen = B/w 768px to 1024px
-*/
-@media (min-width: 768px) and (max-width: 1024px) {
-  /* CSS */
-}
-/* 
-  ##Device = Tablets, Ipads (landscape)
-  ##Screen = B/w 768px to 1024px
-*/
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  /* CSS */
-}
-/* 
-  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-  ##Screen = B/w 481px to 767px
-*/
-@media (min-width: 481px) and (max-width: 767px) {
-  /* CSS */
-}
-/* 
-  ##Device = Most of the Smartphones Mobiles (Portrait)
-  ##Screen = B/w 320px to 479px
-*/
-@media (min-width: 320px) and (max-width: 480px) {
-  /* CSS */
-}/*# sourceMappingURL=style.css.map */
+*//*# sourceMappingURL=style.css.map */
