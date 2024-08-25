@@ -1001,42 +1001,6 @@ body {
   letter-spacing: 4.32px;
 }
 
-ymaps[class*="--marker"] {
-  filter: invert(1);
-}
-
-#document html body._map-widget-mobile._font_loaded._app_ready._map_ready._vector_ready div.body div.map-widget-app div div.map-widget-map-component ymaps.ymaps3x0--map ymaps.ymaps3x0--top-engine-container ymaps ymaps.ymaps3x0--layer.ymaps3x0--marker-layer {
-  filter: invert(1);
-}
-
-#document html body._map-widget-mobile._font_loaded._app_ready._map_ready._vector_ready div.body div.map-widget-app div div.map-widget-map-component ymaps.ymaps3x0--map ymaps.ymaps3x0--top-engine-container ymaps ymaps.ymaps3x0--layer.ymaps3x0--marker-layer ymaps.ymaps3x0--marker {
-  filter: invert(1);
-}
-
-.map__frame .yamaps .ymaps3x0--marker {
-  filter: invert(1);
-}
-
-.map__frame ymaps[class*="--marker"] {
-  filter: invert(1);
-}
-.map__frame [class*="--marker"] {
-  filter: invert(1);
-}
-.map__frame #document[class*="--marker"] {
-  filter: invert(1);
-}
-.map__frame .ymaps[class*="--marker"] {
-  filter: invert(1);
-}
-.map__frame .ymaps3x0--marker {
-  filter: invert(1);
-}
-
-html body div.wrapper div.about div.about__container div.container div.flex__container__r div.map__container div.map #document html body._map-widget-mobile._font_loaded._app_ready._map_ready._vector_ready div.body div.map-widget-app div div.map-widget-map-component ymaps.ymaps3x0--map ymaps.ymaps3x0--top-engine-container ymaps ymaps.ymaps3x0--layer.ymaps3x0--marker-layer ymaps.ymaps3x0--marker {
-  filter: invert(1);
-}
-
 @media only screen and (max-width: 1920px) {
   .wrapper .about {
     background-size: 100vw;
@@ -1564,20 +1528,7 @@ html body div.wrapper div.about div.about__container div.container div.flex__con
     width: 100%;
     border: 1px red solid;
     border-radius: 5%;
-  }
-  .wrapper .about .about__container .container .flex__container__r .map__container .map .ymaps3x0--marker {
-    filter: invert(1);
-  }
-  .wrapper .about .about__container .container .flex__container__r .map__container .map .map__frame {
-    border-radius: 5%;
-    filter: invert(1) grayscale(100%);
-  }
-  .wrapper .about .about__container .container .flex__container__r .map__container .map .map__frame .--marker {
-    filter: invert(1);
-  }
-  .wrapper .about .about__container .container .flex__container__r .map__container .map .map__frame .ymaps3x0--marker {
-    filter: invert(1);
-    z-index: 7;
+    height: 200px;
   }
   .wrapper .about .about__container .container .flex__container__r .map__container .photo {
     display: none;
