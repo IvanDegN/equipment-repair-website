@@ -332,20 +332,21 @@ var map = new ol.Map({
       })
     ],
     view: new ol.View({
-      projection: 'EPSG:4326',
-      center: ol.proj.toLonLat([40.271546, 48.316393], 'EPSG:4326'),
+      projection: 'EPSG:3857',
+      center: ol.proj.fromLonLat([40.271546, 48.316393]),
       zoom: 20,
     })
   });
 
 
   var adr = new ol.Feature({
-                geometry: new ol.geom.Point(ol.proj.toLonLat([40.271546, 48.316393], 'EPSG:4326')),
+                geometry: new ol.geom.Point(ol.proj.fromLonLat([40.271546, 48.316393])),
                 name: 'adr'
             })
 
     var stl = new ol.style.Style({
         image: new ol.style.Icon({
+            anchor: [0.5, 1],
             src: 'https://cdn-icons-png.flaticon.com/512/1397/1397898.png',
             scale: 0.1
         })
